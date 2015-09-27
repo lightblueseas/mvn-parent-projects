@@ -20,7 +20,6 @@
 		Parent project for general java projects.
 	</description>
 
-
 	<properties>
 		<!-- LOMBOK version -->
 		<lombok.version>1.16.6</lombok.version>
