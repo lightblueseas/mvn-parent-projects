@@ -124,6 +124,10 @@
 						<groupId>org.apache.wicket</groupId>
 						<artifactId>wicket</artifactId>
 					</exclusion>
+					<exclusion>
+						<groupId>org.apache.wicket</groupId>
+						<artifactId>wicket-core</artifactId>
+					</exclusion>
 				</exclusions>
 			</dependency>
 			<!-- WICKET-SOURCE DEPENDENCIES -->
