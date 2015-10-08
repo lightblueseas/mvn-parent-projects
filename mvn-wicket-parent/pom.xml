@@ -15,7 +15,11 @@
 	<packaging>pom</packaging>
 	<version>6.0.0</version>
 
-	<name>${project.artifactId}</name>
+	<name>${project.artifactId}</name>	
+
+	<modules>
+		<module>wicket-application</module>
+	</modules>
 
 	<properties>
 		<!-- WICKET version -->
@@ -27,13 +31,7 @@
 		<wicketstuff.version>[6.0.0,6.99)</wicketstuff.version>
 		<wiquery-core.version>6.13.0</wiquery-core.version>
 		<wicket-modelfactory.version>0.9.8</wicket-modelfactory.version>
-		<wicket-source.version>6.0.0.8</wicket-source.version>
 		<wicket-js-addons.version>6.18.0</wicket-js-addons.version>
-		<!-- JETTY 9 version -->
-		<jetty9.version>9.3.0.v20150612</jetty9.version>
-		<wicket-jetty9-runner.version>2.0.0</wicket-jetty9-runner.version>
-		<!-- TOMCAT version -->
-		<tomcat.version>7.0.57</tomcat.version>
 		<!-- JAULP versions -->
 		<jaulp.core.version>4.1.0</jaulp.core.version>
 		<jaulp.collections.version>${jaulp.core.version}</jaulp.collections.version>
@@ -60,15 +58,7 @@
 		<commons-collections4.version>4.0</commons-collections4.version>
 		<guava.version>18.0</guava.version>
 		<commons-lang3.version>3.3.1</commons-lang3.version>
-		<!-- MAVEN PLUGIN versions -->
-		<!-- allowed values: R7, 1.0, 1.5, 2.0 or none -->
-		<wtp.version>2.0</wtp.version>
-		<!-- MAVEN WAR PLUGIN versions -->
-		<maven-war-plugin.version>2.6</maven-war-plugin.version>
-		<!-- TOMCAT7 MAVEN PLUGIN versions -->
-		<tomcat7-maven-plugin.version>2.2</tomcat7-maven-plugin.version>
 	</properties>
-
 
 	<dependencyManagement>
 		<dependencies>
@@ -125,12 +115,6 @@
 						<artifactId>wicket</artifactId>
 					</exclusion>
 				</exclusions>
-			</dependency>
-			<!-- WICKET-SOURCE DEPENDENCIES -->
-			<dependency>
-				<groupId>net.ftlines.wicket-source</groupId>
-				<artifactId>wicket-source</artifactId>
-				<version>${wicket-source.version}</version>
 			</dependency>
 
 			<dependency>
@@ -236,7 +220,6 @@
 				<version>${commons-collections4.version}</version>
 			</dependency>
 
-
 			<dependency>
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
@@ -254,42 +237,10 @@
 				<artifactId>recaptcha4j</artifactId>
 				<version>${recaptcha4j.version}</version>
 			</dependency>
-			<!-- JETTY 9 DEPENDENCIES -->
-			<dependency>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-server</artifactId>
-				<version>${jetty9.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-webapp</artifactId>
-				<version>${jetty9.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-util</artifactId>
-				<version>${jetty9.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-jmx</artifactId>
-				<version>${jetty9.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-deploy</artifactId>
-				<version>${jetty9.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>de.alpharogroup</groupId>
-				<artifactId>wicket-jetty9-runner</artifactId>
-				<version>${wicket-jetty9-runner.version}</version>
-			</dependency>
-
+			
 		</dependencies>
 
 	</dependencyManagement>
-
 
 	<build>
 
@@ -358,163 +309,11 @@
 					</configuration>
 				</plugin>
 
-				<plugin>
-					<artifactId>maven-war-plugin</artifactId>
-					<version>${maven-war-plugin.version}</version>
-				</plugin>
-
-				<plugin>
-					<groupId>org.eclipse.jetty</groupId>
-					<artifactId>jetty-maven-plugin</artifactId>
-					<version>${jetty9.version}</version>
-					<configuration>
-						<systemProperties>
-							<systemProperty>
-								<name>maven.project.build.directory.test-classes</name>
-								<value>${project.build.directory}/test-classes</value>
-							</systemProperty>
-						</systemProperties>
-						<jettyXml>${project.basedir}/src/test/jetty/jetty.xml,${project.basedir}/src/test/jetty/jetty-ssl.xml,${project.basedir}/src/test/jetty/jetty-http.xml,${project.basedir}/src/test/jetty/jetty-https.xml</jettyXml>
-					</configuration>
-				</plugin>
-
-				<plugin>
-					<groupId>org.apache.tomcat.maven</groupId>
-					<artifactId>tomcat7-maven-plugin</artifactId>
-					<version>${tomcat7-maven-plugin.version}</version>
-					<configuration>
-						<path>/</path>
-						<port>9090</port>
-						<httpsPort>9443</httpsPort>
-						<update>true</update>
-						<url>http://localhost:9090/manager/text</url>
-						<username>tomcat</username>
-						<password>tomcat</password>
-						<keystoreFile>${project.build.directory}/test-classes/keystore</keystoreFile>
-						<keystorePass>wicket</keystorePass>
-					</configuration>
-					<!-- Configure whatever 7.0.* tomcat version we want. -->
-					<dependencies>
-						<dependency>
-							<groupId>org.apache.tomcat.embed</groupId>
-							<artifactId>tomcat-embed-core</artifactId>
-							<version>${tomcat.version}</version>
-						</dependency>
-						<dependency>
-							<groupId>org.apache.tomcat</groupId>
-							<artifactId>tomcat-util</artifactId>
-							<version>${tomcat.version}</version>
-						</dependency>
-						<dependency>
-							<groupId>org.apache.tomcat</groupId>
-							<artifactId>tomcat-coyote</artifactId>
-							<version>${tomcat.version}</version>
-						</dependency>
-						<dependency>
-							<groupId>org.apache.tomcat</groupId>
-							<artifactId>tomcat-api</artifactId>
-							<version>${tomcat.version}</version>
-						</dependency>
-
-						<dependency>
-							<groupId>org.apache.tomcat</groupId>
-							<artifactId>tomcat-jdbc</artifactId>
-							<version>${tomcat.version}</version>
-						</dependency>
-
-						<dependency>
-							<groupId>org.apache.tomcat</groupId>
-							<artifactId>tomcat-dbcp</artifactId>
-							<version>${tomcat.version}</version>
-						</dependency>
-
-						<dependency>
-							<groupId>org.apache.tomcat</groupId>
-							<artifactId>tomcat-servlet-api</artifactId>
-							<version>${tomcat.version}</version>
-						</dependency>
-
-						<dependency>
-							<groupId>org.apache.tomcat</groupId>
-							<artifactId>tomcat-jsp-api</artifactId>
-							<version>${tomcat.version}</version>
-						</dependency>
-
-						<dependency>
-							<groupId>org.apache.tomcat</groupId>
-							<artifactId>tomcat-jasper</artifactId>
-							<version>${tomcat.version}</version>
-						</dependency>
-
-						<dependency>
-							<groupId>org.apache.tomcat</groupId>
-							<artifactId>tomcat-jasper-el</artifactId>
-							<version>${tomcat.version}</version>
-						</dependency>
-
-						<dependency>
-							<groupId>org.apache.tomcat</groupId>
-							<artifactId>tomcat-el-api</artifactId>
-							<version>${tomcat.version}</version>
-						</dependency>
-
-						<dependency>
-							<groupId>org.apache.tomcat</groupId>
-							<artifactId>tomcat-catalina</artifactId>
-							<version>${tomcat.version}</version>
-						</dependency>
-
-						<dependency>
-							<groupId>org.apache.tomcat</groupId>
-							<artifactId>tomcat-tribes</artifactId>
-							<version>${tomcat.version}</version>
-						</dependency>
-
-						<dependency>
-							<groupId>org.apache.tomcat</groupId>
-							<artifactId>tomcat-catalina-ha</artifactId>
-							<version>${tomcat.version}</version>
-						</dependency>
-
-						<dependency>
-							<groupId>org.apache.tomcat</groupId>
-							<artifactId>tomcat-annotations-api</artifactId>
-							<version>${tomcat.version}</version>
-						</dependency>
-
-						<dependency>
-							<groupId>org.apache.tomcat</groupId>
-							<artifactId>tomcat-juli</artifactId>
-							<version>${tomcat.version}</version>
-						</dependency>
-
-						<dependency>
-							<groupId>org.apache.tomcat.embed</groupId>
-							<artifactId>tomcat-embed-logging-juli</artifactId>
-							<version>${tomcat.version}</version>
-						</dependency>
-
-						<dependency>
-							<groupId>org.apache.tomcat.embed</groupId>
-							<artifactId>tomcat-embed-logging-log4j</artifactId>
-							<version>${tomcat.version}</version>
-						</dependency>
-
-					</dependencies>
-
-				</plugin>
-
 			</plugins>
 
 		</pluginManagement>
 
 		<plugins>
-
-			<plugin>
-				<inherited>true</inherited>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-maven-plugin</artifactId>
-			</plugin>
 
 			<plugin>
 				<inherited>true</inherited>
@@ -573,5 +372,5 @@
 		</profile>
 
 	</profiles>
-
+	
 </project>
