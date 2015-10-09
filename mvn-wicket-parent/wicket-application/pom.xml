@@ -72,8 +72,7 @@
 
 		</dependencies>
 
-	</dependencyManagement>
-	
+	</dependencyManagement>	
 	
 	<build>
 
