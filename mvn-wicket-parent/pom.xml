@@ -15,7 +15,7 @@
 	<packaging>pom</packaging>
 	<version>6.0.0</version>
 
-	<name>${project.artifactId}</name>	
+	<name>${project.artifactId}</name>
 
 	<modules>
 		<module>wicket-application</module>
@@ -32,6 +32,8 @@
 		<wiquery-core.version>6.13.0</wiquery-core.version>
 		<wicket-modelfactory.version>0.9.8</wicket-modelfactory.version>
 		<wicket-js-addons.version>6.18.0</wicket-js-addons.version>
+		
+        <servlet-api.version>3.1.0</servlet-api.version>
 		<!-- JAULP versions -->
 		<jaulp.core.version>4.1.0</jaulp.core.version>
 		<jaulp.collections.version>${jaulp.core.version}</jaulp.collections.version>
@@ -62,6 +64,12 @@
 
 	<dependencyManagement>
 		<dependencies>
+
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>javax.servlet-api</artifactId>
+				<version>${servlet-api.version}</version>
+			</dependency>
 			<!-- WICKET DEPENDENCIES -->
 			<dependency>
 				<groupId>org.apache.wicket</groupId>
@@ -241,7 +249,7 @@
 				<artifactId>recaptcha4j</artifactId>
 				<version>${recaptcha4j.version}</version>
 			</dependency>
-			
+
 		</dependencies>
 
 	</dependencyManagement>
@@ -376,5 +384,5 @@
 		</profile>
 
 	</profiles>
-	
+
 </project>
