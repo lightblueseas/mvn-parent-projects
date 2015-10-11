@@ -10,9 +10,8 @@
 	<packaging>pom</packaging>
 
 	<name>${project.artifactId}</name>
-	
-	
-	<properties>	
+
+	<properties>
 		<!-- WICKET-SOURCE version -->
 		<wicket-source.version>6.0.0.8</wicket-source.version>
 		<!-- JETTY 9 version -->
@@ -28,8 +27,7 @@
 		<!-- TOMCAT7 MAVEN PLUGIN versions -->
 		<tomcat7-maven-plugin.version>2.2</tomcat7-maven-plugin.version>
 	</properties>
-	
-	
+
 	<dependencyManagement>
 		<dependencies>
 			<!-- WICKET-SOURCE DEPENDENCIES -->
@@ -72,8 +70,8 @@
 
 		</dependencies>
 
-	</dependencyManagement>	
-	
+	</dependencyManagement>
+
 	<build>
 
 		<pluginManagement>
@@ -83,6 +81,9 @@
 				<plugin>
 					<artifactId>maven-war-plugin</artifactId>
 					<version>${maven-war-plugin.version}</version>
+					<configuration>
+						<failOnMissingWebXml>false</failOnMissingWebXml>
+					</configuration>
 				</plugin>
 
 				<plugin>
@@ -241,5 +242,5 @@
 		</plugins>
 
 	</build>
-	
+
 </project>
