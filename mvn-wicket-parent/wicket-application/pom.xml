@@ -13,7 +13,7 @@
 
 	<properties>
 		<!-- WICKET-SOURCE version -->
-		<wicket-source.version>7.0.0.0</wicket-source.version>
+		<wicket-source.version>7.0.0</wicket-source.version>
 		<!-- JETTY 9 version -->
 		<jetty9.version>9.3.0.v20150612</jetty9.version>
 		<wicket-jetty9-runner.version>3.0.0</wicket-jetty9-runner.version>
