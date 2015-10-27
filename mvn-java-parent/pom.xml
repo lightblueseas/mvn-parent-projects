@@ -346,4 +346,7 @@
 
 	</profiles>
 
+	<modules>
+		<module>mvn-persistence-parent</module>
+	</modules>
 </project>
