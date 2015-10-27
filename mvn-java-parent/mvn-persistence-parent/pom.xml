@@ -35,18 +35,55 @@
 		<dozer.version>5.5.1</dozer.version>
 		<!-- REST-API versions -->
 		<javax.ws.rs-api.version>2.0.1</javax.ws.rs-api.version>
-
+		<!-- PERSISTENCE-API versions -->
+		<persistence-api.version>3.1.0</persistence-api.version>
+		<business-api.version>${persistence-api.version}</business-api.version>
+		<data-api.version>${persistence-api.version}</data-api.version>
+		<data-usertype.version>${persistence-api.version}</data-usertype.version>
+		<data-initialization.version>${persistence-api.version}</data-initialization.version>
 		<hibernate3-maven-plugin.version>2.2</hibernate3-maven-plugin.version>
 		<hibernate4-maven-plugin.version>1.0.5</hibernate4-maven-plugin.version>
 		<sql-maven-plugin.version>1.5</sql-maven-plugin.version>
 		<m2e.lifecycle-mapping.version>1.0.0</m2e.lifecycle-mapping.version>
 		<exec-maven-plugin.version>1.4.0</exec-maven-plugin.version>
 		<properties-maven-plugin.version>1.0-alpha-2</properties-maven-plugin.version>
-		
+
 	</properties>
 
-	<build> 	
-		
+	<dependencyManagement>
+
+		<dependencies>
+
+			<dependency>
+				<groupId>de.alpharogroup</groupId>
+				<artifactId>data-api</artifactId>
+				<version>${persistence-api.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>de.alpharogroup</groupId>
+				<artifactId>data-usertype</artifactId>
+				<version>${persistence-api.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>de.alpharogroup</groupId>
+				<artifactId>data-initialization</artifactId>
+				<version>${persistence-api.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>de.alpharogroup</groupId>
+				<artifactId>business-api</artifactId>
+				<version>${persistence-api.version}</version>
+			</dependency>
+
+		</dependencies>
+
+	</dependencyManagement>
+
+	<build>
+
 		<pluginManagement>
 
 			<plugins>
@@ -182,8 +219,8 @@
 			</plugins>
 
 		</pluginManagement>
-		
+
 	</build>
-	
+
 
 </project>
