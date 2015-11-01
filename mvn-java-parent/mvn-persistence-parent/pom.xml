@@ -32,6 +32,8 @@
 		<!-- CONNECTION POOL versions -->
 		<tomcat.version>7.0.57</tomcat.version>
 		<tomcat-dbcp.version>7.0.57</tomcat-dbcp.version>
+		<!-- DB UNIT version -->
+		<dbunit.version>2.5.1</dbunit.version>
 		<!-- JAULP versions -->
 		<jaulp.core.version>4.2.0</jaulp.core.version>
 		<jaulp.lang.version>${jaulp.core.version}</jaulp.lang.version>
@@ -152,6 +154,12 @@
 				<groupId>org.postgresql</groupId>
 				<artifactId>postgresql</artifactId>
 				<version>${postgresql.version}</version>
+			</dependency>
+			<!-- DBUNIT DEPENDENCIES -->
+			<dependency>
+				<groupId>org.dbunit</groupId>
+				<artifactId>dbunit</artifactId>
+				<version>${dbunit.version}</version>
 			</dependency>
 
 		</dependencies>
