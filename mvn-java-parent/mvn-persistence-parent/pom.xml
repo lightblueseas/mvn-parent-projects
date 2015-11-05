@@ -29,6 +29,7 @@
 		<spring.version>4.1.5.RELEASE</spring.version>
 		<!-- DB DRIVER version -->
 		<postgresql.version>9.2-1003-jdbc4</postgresql.version>
+		<h2.version>1.4.182</h2.version>
 		<!-- CONNECTION POOL versions -->
 		<tomcat.version>7.0.57</tomcat.version>
 		<tomcat-dbcp.version>7.0.57</tomcat-dbcp.version>
@@ -154,6 +155,12 @@
 				<groupId>org.postgresql</groupId>
 				<artifactId>postgresql</artifactId>
 				<version>${postgresql.version}</version>
+			</dependency>
+			<!-- H2 DEPENDENCIES -->
+			<dependency>
+				<groupId>com.h2database</groupId>
+				<artifactId>h2</artifactId>
+				<version>${h2.version}</version>
 			</dependency>
 			<!-- DBUNIT DEPENDENCIES -->
 			<dependency>
