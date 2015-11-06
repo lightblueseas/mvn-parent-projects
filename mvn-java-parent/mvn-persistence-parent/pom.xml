@@ -95,6 +95,12 @@
 				<artifactId>business-api</artifactId>
 				<version>${persistence-api.version}</version>
 			</dependency>
+
+			<dependency>
+				<groupId>de.alpharogroup</groupId>
+				<artifactId>rest-api</artifactId>
+				<version>${persistence-api.version}</version>
+			</dependency>
 			<!-- SPRING DEPENDENCIES -->
 			<dependency>
 				<groupId>org.springframework</groupId>
