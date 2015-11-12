@@ -37,7 +37,7 @@
 		<!-- DB UNIT version -->
 		<dbunit.version>2.5.1</dbunit.version>
 		<!-- JAULP versions -->
-		<jaulp.core.version>4.2.0</jaulp.core.version>
+		<jaulp.core.version>4.3.0</jaulp.core.version>
 		<jaulp.lang.version>${jaulp.core.version}</jaulp.lang.version>
 		<jaulp.xml.version>${jaulp.core.version}</jaulp.xml.version>
 		<!-- EXTERNAL LIBRARIES versions -->
@@ -59,6 +59,7 @@
 		<data-api.version>${persistence-api.version}</data-api.version>
 		<data-usertype.version>${persistence-api.version}</data-usertype.version>
 		<data-initialization.version>${persistence-api.version}</data-initialization.version>
+		<rest-api.version>${persistence-api.version}</rest-api.version>
 		<hibernate3-maven-plugin.version>2.2</hibernate3-maven-plugin.version>
 		<hibernate4-maven-plugin.version>1.0.5</hibernate4-maven-plugin.version>
 		<sql-maven-plugin.version>1.5</sql-maven-plugin.version>
