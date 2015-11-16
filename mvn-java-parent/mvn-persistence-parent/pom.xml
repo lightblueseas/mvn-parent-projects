@@ -60,6 +60,8 @@
 		<data-usertype.version>${persistence-api.version}</data-usertype.version>
 		<data-initialization.version>${persistence-api.version}</data-initialization.version>
 		<rest-api.version>${persistence-api.version}</rest-api.version>
+		<!-- allowed values: R7, 1.0, 1.5, 2.0 or none -->
+		<wtp.version>2.0</wtp.version>
 		<!-- WAR MAVEN PLUGIN versions -->
 		<maven-war-plugin.version>2.6</maven-war-plugin.version>
 		<!-- HIBERNATE MAVEN PLUGIN versions -->
@@ -218,15 +220,15 @@
 			</dependency>
 
 			<dependency>
-				<groupId>com.fasterxml.jackson.jaxrs</groupId>
-				<artifactId>jackson-jaxrs-json-provider</artifactId>
-				<version>${jackson-jaxrs-json-provider.version}</version>
-			</dependency>
-
-			<dependency>
 				<groupId>org.apache.cxf</groupId>
 				<artifactId>cxf-rt-rs-client</artifactId>
 				<version>${cxf-rt-rs-client.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.fasterxml.jackson.jaxrs</groupId>
+				<artifactId>jackson-jaxrs-json-provider</artifactId>
+				<version>${jackson-jaxrs-json-provider.version}</version>
 			</dependency>
 			<!-- JETTY 9 DEPENDENCIES -->
 			<dependency>
