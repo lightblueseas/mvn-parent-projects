@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.alpharogroup</groupId>
@@ -44,8 +45,8 @@
 	<organization>
 		<name>Alpha Ro Group UG (haftungsbeschrängt)</name>
 		<url>http://www.alpharogroup.de/</url>
-	</organization>	
-	
+	</organization>
+
 	<scm>
 		<connection>scm:git:git:@github.com:lightblueseas/mvn-parent-projects.git</connection>
 		<developerConnection>scm:git:git@github.com:lightblueseas/mvn-parent-projects.git</developerConnection>
@@ -77,12 +78,12 @@
 
 	<modules>
 		<module>mvn-java-parent</module>
-    <module>mvn-wicket-parent</module>
-  </modules>
+		<module>mvn-wicket-parent</module>
+	</modules>
 
 	<properties>
 		<!-- PROJECT encoding -->
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>		
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- MAVEN PLUGIN versions -->
 		<!-- MAVEN COMPILER PLUGIN version -->
 		<maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
@@ -116,8 +117,8 @@
 		<nexus-staging-maven-plugin.version>1.6.5</nexus-staging-maven-plugin.version>
 		<!-- MAVEN SCM-PUBLISH PLUGIN version -->
 		<maven-scm-publish-plugin.version>1.1</maven-scm-publish-plugin.version>
-	</properties>	
-	
+	</properties>
+
 	<build>
 
 		<pluginManagement>
@@ -302,8 +303,8 @@
 		</pluginManagement>
 
 	</build>
-	
-	
+
+
 	<profiles>
 
 		<profile>
