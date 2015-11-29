@@ -11,8 +11,9 @@
 	</parent>
 
 	<artifactId>mvn-java-parent</artifactId>
-	<packaging>pom</packaging>
 	<version>2.2.0</version>
+	<packaging>pom</packaging>
+	<inceptionYear>2015</inceptionYear>
 
 	<name>${project.artifactId}</name>
 
