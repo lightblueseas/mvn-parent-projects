@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>de.alpharogroup</groupId>
 		<artifactId>mvn-java-parent</artifactId>
-		<version>2.0.0</version>
+		<version>2.2.0</version>
 		<relativePath></relativePath>
 	</parent>
 
@@ -31,7 +31,7 @@
 		<wicketstuff.version>[7.0.0,7.99)</wicketstuff.version>
 		<!-- TODO change to 7.0.0 -->
 		<wiquery-core.version>6.13.0</wiquery-core.version>
-		<wicket-js-addons.version>7.0.0</wicket-js-addons.version>
+		<wicket-js-addons.version>7.1.0</wicket-js-addons.version>
 
 		<servlet-api.version>3.1.0</servlet-api.version>
 		<!-- NEW EXTENSIONS LIB versions -->
@@ -47,7 +47,7 @@
 		<vintage-time.version>${extensions-lib.version}</vintage-time.version>
 		<xml-extensions.version>${extensions-lib.version}</xml-extensions.version>
 		<!-- MYSTIC-CRYPT versions -->
-		<mystic-crypt.version>4.3.0</mystic-crypt.version>
+		<mystic-crypt.version>4.4.0</mystic-crypt.version>
 		<crypt-core.version>${mystic-crypt.version}</crypt-core.version>
 		<randomizer.version>${mystic-crypt.version}</randomizer.version>
 		<auth-security.version>${mystic-crypt.version}</auth-security.version>
