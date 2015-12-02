@@ -13,7 +13,7 @@
 
 	<artifactId>mvn-wicket-parent</artifactId>
 	<packaging>pom</packaging>
-	<version>7.1.0</version>
+	<version>7.1.1</version>
 
 	<name>${project.artifactId}</name>
 
@@ -35,7 +35,7 @@
 
 		<servlet-api.version>3.1.0</servlet-api.version>
 		<!-- NEW EXTENSIONS LIB versions -->
-		<extensions-lib.version>4.7.0</extensions-lib.version>
+		<extensions-lib.version>4.8.0</extensions-lib.version>
 		<silly-collections.version>${extensions-lib.version}</silly-collections.version>
 		<email-tails.version>${extensions-lib.version}</email-tails.version>
 		<file-worker.version>${extensions-lib.version}</file-worker.version>
@@ -47,7 +47,7 @@
 		<vintage-time.version>${extensions-lib.version}</vintage-time.version>
 		<xml-extensions.version>${extensions-lib.version}</xml-extensions.version>
 		<!-- MYSTIC-CRYPT versions -->
-		<mystic-crypt.version>4.4.0</mystic-crypt.version>
+		<mystic-crypt.version>4.7.0</mystic-crypt.version>
 		<crypt-core.version>${mystic-crypt.version}</crypt-core.version>
 		<randomizer.version>${mystic-crypt.version}</randomizer.version>
 		<auth-security.version>${mystic-crypt.version}</auth-security.version>

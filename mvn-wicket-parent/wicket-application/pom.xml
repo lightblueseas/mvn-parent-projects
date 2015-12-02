@@ -7,7 +7,7 @@
 		<version>7.1.0</version>
 	</parent>
 	<artifactId>wicket-application</artifactId>
-	<version>7.3.0</version>
+	<version>7.3.1</version>
 	<packaging>pom</packaging>
 
 	<name>${project.artifactId}</name>
@@ -17,7 +17,7 @@
 		<wicket-source.version>7.0.0</wicket-source.version>
 		<!-- JETTY 9 version -->
 		<jetty9.version>9.3.6.v20151106</jetty9.version>
-		<jetty9-runner.version>3.3.0</jetty9-runner.version>
+		<jetty9-runner.version>3.4.0</jetty9-runner.version>
 		<!-- TOMCAT version -->
 		<tomcat.version>7.0.65</tomcat.version>
 		<!-- MAVEN PLUGIN versions -->
