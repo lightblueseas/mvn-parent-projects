@@ -13,7 +13,7 @@
 
 	<artifactId>mvn-wicket-parent</artifactId>
 	<packaging>pom</packaging>
-	<version>7.1.1</version>
+	<version>7.1.2</version>
 
 	<name>${project.artifactId}</name>
 
@@ -23,8 +23,8 @@
 
 	<properties>
 		<!-- WICKET version -->
-		<!-- Means for versions 7.0.0 <= x < 7.99 For more information see https://maven.apache.org/enforcer/enforcer-rules/versionRanges.html 
-			and https://docs.oracle.com/middleware/1212/core/MAVEN/maven_version.htm#MAVEN402 
+		<!-- Means for versions 7.0.0 <= x < 7.99 For more information see https://maven.apache.org/enforcer/enforcer-rules/versionRanges.html
+			and https://docs.oracle.com/middleware/1212/core/MAVEN/maven_version.htm#MAVEN402
 			7.3 Version Range References -->
 		<wicket.version>[7.0.0,7.99)</wicket.version>
 		<!-- WICKET EXTENSION LIBRARIES versions -->
@@ -205,6 +205,12 @@
 				<groupId>de.alpharogroup</groupId>
 				<artifactId>vintage-time</artifactId>
 				<version>${vintage-time.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>de.alpharogroup</groupId>
+				<artifactId>gen-tree</artifactId>
+				<version>${gen-tree.version}</version>
 			</dependency>
 
 			<dependency>
