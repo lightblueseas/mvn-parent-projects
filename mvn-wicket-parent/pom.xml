@@ -179,12 +179,6 @@
 
 			<dependency>
 				<groupId>de.alpharogroup</groupId>
-				<artifactId>randomizer</artifactId>
-				<version>${randomizer.version}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>de.alpharogroup</groupId>
 				<artifactId>xml-extensions</artifactId>
 				<version>${xml-extensions.version}</version>
 			</dependency>
@@ -212,11 +206,23 @@
 				<artifactId>gen-tree</artifactId>
 				<version>${gen-tree.version}</version>
 			</dependency>
-
+			<!-- MYSTIC-CRYPT DEPENDENCIES -->
 			<dependency>
 				<groupId>de.alpharogroup</groupId>
 				<artifactId>auth-security</artifactId>
 				<version>${auth-security.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>de.alpharogroup</groupId>
+				<artifactId>crypt-core</artifactId>
+				<version>${crypt-core.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>de.alpharogroup</groupId>
+				<artifactId>randomizer</artifactId>
+				<version>${randomizer.version}</version>
 			</dependency>
 			<!-- EXTERNAL LIBRARIES DEPENDENCIES -->
 			<dependency>
