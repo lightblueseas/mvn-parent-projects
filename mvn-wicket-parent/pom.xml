@@ -13,7 +13,7 @@
 
 	<artifactId>mvn-wicket-parent</artifactId>
 	<packaging>pom</packaging>
-	<version>7.1.6</version>
+	<version>7.1.7</version>
 
 	<name>${project.artifactId}</name>
 
@@ -51,6 +51,8 @@
 		<crypt-core.version>${mystic-crypt.version}</crypt-core.version>
 		<randomizer.version>${mystic-crypt.version}</randomizer.version>
 		<auth-security.version>${mystic-crypt.version}</auth-security.version>
+		<!-- RESOURCEBUNDLE-CORE version -->
+		<resourcebundle-inspector.version>2.7.0</resourcebundle-inspector.version>
 		<!-- EXTERNAL LIBRARIES versions -->
 		<recaptcha4j.version>0.0.7</recaptcha4j.version>
 		<joda-time.version>2.7</joda-time.version>
@@ -229,6 +231,12 @@
 				<groupId>de.alpharogroup</groupId>
 				<artifactId>randomizer</artifactId>
 				<version>${randomizer.version}</version>
+			</dependency>
+			<!-- RESOURCEBUNDLE-CORE DEPENDENCIES -->
+			<dependency>
+				<groupId>de.alpharogroup</groupId>
+				<artifactId>resourcebundle-inspector</artifactId>
+				<version>${resourcebundle-inspector.version}</version>
 			</dependency>
 			<!-- EXTERNAL LIBRARIES DEPENDENCIES -->
 			<dependency>
