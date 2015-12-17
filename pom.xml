@@ -5,7 +5,7 @@
 
 	<groupId>de.alpharogroup</groupId>
 	<artifactId>mvn-parent-projects</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
@@ -93,6 +93,8 @@
 		<maven.compiler.optimize>true</maven.compiler.optimize>
 		<maven.compiler.showWarnings>true</maven.compiler.showWarnings>
 		<maven.compiler.debug>true</maven.compiler.debug>
+		<!-- MAVEN DEPENDENCY PLUGIN version -->
+		<maven-dependency-plugin.version>2.10</maven-dependency-plugin.version>
 		<!-- MAVEN SOURCE PLUGIN version -->
 		<maven-source-plugin.version>2.4</maven-source-plugin.version>
 		<!-- MAVEN CLEAN PLUGIN version -->
@@ -127,7 +129,7 @@
 
 				<plugin>
 					<inherited>true</inherited>
-					<!-- NOTE: We don't need a groupId specification because the group is 
+					<!-- NOTE: We don't need a groupId specification because the group is
 						org.apache.maven.plugins ...which is assumed by default. -->
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>${maven-compiler-plugin.version}</version>
@@ -141,8 +143,8 @@
 						<debug>${maven.compiler.debug}</debug>
 					</configuration>
 				</plugin>
-				<!-- Configuring maven source plugin: To attach source artifacts to your 
-					build we execute the source:jar goal from the source plugin during the package 
+				<!-- Configuring maven source plugin: To attach source artifacts to your
+					build we execute the source:jar goal from the source plugin during the package
 					phase. -->
 				<plugin>
 					<inherited>true</inherited>
@@ -157,7 +159,7 @@
 						</execution>
 					</executions>
 				</plugin>
-				<!-- Configuring maven clean plugin: deletes the generated test-output 
+				<!-- Configuring maven clean plugin: deletes the generated test-output
 					directories that are generated from testng. -->
 				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
@@ -177,7 +179,7 @@
 					<artifactId>maven-install-plugin</artifactId>
 					<version>${maven-install-plugin.version}</version>
 				</plugin>
-				<!-- Configuring Maven Javadoc Plugin: To attach javadoc artifacts to 
+				<!-- Configuring Maven Javadoc Plugin: To attach javadoc artifacts to
 					your build we execute the javadoc:jar goal from the javadoc plugin. -->
 				<plugin>
 					<inherited>true</inherited>
@@ -278,13 +280,13 @@
 						</execution>
 					</executions>
 				</plugin>
-				<!-- The Nexus Staging Maven Plugin is the recommended way to deploy 
-					your components to OSSRH and release them to the Central Repository. _______________ 
-					If your version is a release version (does not end in -SNAPSHOT) and with 
-					this setup in place, you can run a deployment to OSSRH and an automated release 
-					to the Central Repository with the usual: mvn clean deploy _________________________ 
-					With the property autoReleaseAfterClose set to false you can manually inspect 
-					the staging repository in Nexus and trigger a release of the staging repository 
+				<!-- The Nexus Staging Maven Plugin is the recommended way to deploy
+					your components to OSSRH and release them to the Central Repository. _______________
+					If your version is a release version (does not end in -SNAPSHOT) and with
+					this setup in place, you can run a deployment to OSSRH and an automated release
+					to the Central Repository with the usual: mvn clean deploy _________________________
+					With the property autoReleaseAfterClose set to false you can manually inspect
+					the staging repository in Nexus and trigger a release of the staging repository
 					later with: mvn nexus-staging:release. -->
 				<plugin>
 					<groupId>org.sonatype.plugins</groupId>
@@ -298,6 +300,11 @@
 					</configuration>
 				</plugin>
 
+				<plugin>
+					<artifactId>maven-dependency-plugin</artifactId>
+					<version>${maven-dependency-plugin.version}</version>
+				</plugin>
+
 			</plugins>
 
 		</pluginManagement>
@@ -309,7 +316,7 @@
 
 		<profile>
 			<id>oss.sonatype.org-staged-release</id>
-			<!-- This is the profile to use for releasing into the staged release 
+			<!-- This is the profile to use for releasing into the staged release
 				repo. We need to sign the artifacts. -->
 			<activation>
 				<property>
