@@ -5,11 +5,11 @@
 	<parent>
 		<groupId>de.alpharogroup</groupId>
 		<artifactId>mvn-java-parent</artifactId>
-		<version>2.3.0</version>
+		<version>2.4.0</version>
 	</parent>
 
 	<artifactId>mvn-persistence-parent</artifactId>
-	<version>2.19.0</version>
+	<version>2.20.0</version>
 	<packaging>pom</packaging>
 
 	<name>${project.artifactId}</name>
@@ -74,10 +74,6 @@
 		<sql-maven-plugin.version>1.5</sql-maven-plugin.version>
 		<!-- M2E LIFECYCLE MAPPING MAVEN PLUGIN versions -->
 		<m2e.lifecycle-mapping.version>1.0.0</m2e.lifecycle-mapping.version>
-		<!-- EXEC MAVEN PLUGIN versions -->
-		<exec-maven-plugin.version>1.4.0</exec-maven-plugin.version>
-		<!-- PROPERTIES MAVEN PLUGIN versions -->
-		<properties-maven-plugin.version>1.0-alpha-2</properties-maven-plugin.version>
 	</properties>
 
 	<dependencyManagement>
@@ -327,7 +323,6 @@
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>properties-maven-plugin</artifactId>
-					<version>${properties-maven-plugin.version}</version>
 					<executions>
 						<execution>
 							<phase>initialize</phase>
@@ -395,20 +390,6 @@
 									</includes>
 								</fileset>
 							</configuration>
-						</execution>
-					</executions>
-				</plugin>
-				<!--This plugin is used to execute java classes with a main method. -->
-				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>exec-maven-plugin</artifactId>
-					<version>${exec-maven-plugin.version}</version>
-					<executions>
-						<execution>
-							<phase>package</phase>
-							<goals>
-								<goal>java</goal>
-							</goals>
 						</execution>
 					</executions>
 				</plugin>
