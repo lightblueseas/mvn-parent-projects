@@ -4,10 +4,10 @@
 	<parent>
 		<groupId>de.alpharogroup</groupId>
 		<artifactId>mvn-wicket-parent</artifactId>
-		<version>7.1.5</version>
+		<version>7.1.6</version>
 	</parent>
 	<artifactId>wicket-application</artifactId>
-	<version>7.3.4</version>
+	<version>7.3.6</version>
 	<packaging>pom</packaging>
 
 	<name>${project.artifactId}</name>
@@ -18,6 +18,8 @@
 		<!-- JETTY 9 version -->
 		<jetty9.version>9.3.6.v20151106</jetty9.version>
 		<jetty9-runner.version>3.4.0</jetty9-runner.version>
+		<xml-apis.version>1.4.01</xml-apis.version>
+		<yuicompressor.version>2.4.8</yuicompressor.version>
 		<!-- TOMCAT version -->
 		<tomcat.version>7.0.65</tomcat.version>
 		<!-- MAVEN PLUGIN versions -->
@@ -43,6 +45,18 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
+			<!-- XML-APIS DEPENDENCIES -->
+			<dependency>
+				<groupId>xml-apis</groupId>
+				<artifactId>xml-apis</artifactId>
+				<version>${xml-apis.version}</version>
+			</dependency>
+			<!-- YUICOMPRESSOR DEPENDENCIES -->
+			<dependency>
+				<groupId>com.yahoo.platform.yui</groupId>
+				<artifactId>yuicompressor</artifactId>
+				<version>${yuicompressor.version}</version>
+			</dependency>
 			<!-- JETTY 9 DEPENDENCIES -->
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
@@ -67,6 +81,12 @@
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-deploy</artifactId>
+				<version>${jetty9.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-runner</artifactId>
 				<version>${jetty9.version}</version>
 			</dependency>
 
