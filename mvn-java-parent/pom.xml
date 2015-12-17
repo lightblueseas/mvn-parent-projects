@@ -7,11 +7,11 @@
 	<parent>
 		<groupId>de.alpharogroup</groupId>
 		<artifactId>mvn-parent-projects</artifactId>
-		<version>1.0.0</version>
+		<version>1.1.0</version>
 	</parent>
 
 	<artifactId>mvn-java-parent</artifactId>
-	<version>2.2.0</version>
+	<version>2.3.0</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
@@ -29,7 +29,7 @@
 		<log4j.version>1.2.16</log4j.version>
 		<!-- UNIT TEST versions -->
 		<testng.version>6.9.9</testng.version>
-		<junit.version>4.12</junit.version>	
+		<junit.version>4.12</junit.version>
 		<!-- LICENSE MAVEN PLUGIN versions -->
 		<license-maven-plugin.version>2.8</license-maven-plugin.version>
 		<!-- MAVEN SUREFIRE PLUGIN versions -->
@@ -37,6 +37,8 @@
 		<!-- COVERAGE MAVEN PLUGIN versions -->
 		<coveralls-maven-plugin.version>3.0.1</coveralls-maven-plugin.version>
 		<cobertura-maven-plugin.version>2.6</cobertura-maven-plugin.version>
+		<!-- PROPERTIES MAVEN PLUGIN versions -->
+		<properties-maven-plugin.version>1.0.0</properties-maven-plugin.version>
 	</properties>
 
 	<dependencyManagement>
@@ -83,8 +85,8 @@
 
 		</dependencies>
 
-	</dependencyManagement>	
-	
+	</dependencyManagement>
+
 	<dependencies>
 		<!-- LOMBOK DEPENDENCIES -->
 		<dependency>
@@ -234,6 +236,12 @@
 					</configuration>
 				</plugin>
 
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>properties-maven-plugin</artifactId>
+					<version>${properties-maven-plugin.version}</version>
+				</plugin>
+
 			</plugins>
 
 		</pluginManagement>
@@ -306,8 +314,8 @@
 		</profile>
 
 		<profile>
-			<!-- This profile is for generate or update the license header from source 
-				files. for generate or update the license header you have to run this profile 
+			<!-- This profile is for generate or update the license header from source
+				files. for generate or update the license header you have to run this profile
 				with this goal license:format. -->
 			<id>update-license-header</id>
 			<activation>
@@ -384,5 +392,5 @@
 	<modules>
 		<module>mvn-persistence-parent</module>
 	</modules>
-	
+
 </project>
