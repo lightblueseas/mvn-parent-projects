@@ -13,7 +13,7 @@
 
 	<artifactId>mvn-wicket-parent</artifactId>
 	<packaging>pom</packaging>
-	<version>7.1.8</version>
+	<version>7.1.9</version>
 
 	<name>${project.artifactId}</name>
 
@@ -104,6 +104,16 @@
 				<groupId>org.apache.wicket</groupId>
 				<artifactId>wicket-spring</artifactId>
 				<version>${wicket.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.slf4j</groupId>
+						<artifactId>slf4j-api</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<dependency>
@@ -266,7 +276,7 @@
 				<artifactId>commons-collections4</artifactId>
 				<version>${commons-collections4.version}</version>
 			</dependency>
-
+			<!-- GUAVA DEPENDENCIES -->
 			<dependency>
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
