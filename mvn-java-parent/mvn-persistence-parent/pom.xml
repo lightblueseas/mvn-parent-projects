@@ -9,7 +9,7 @@
 	</parent>
 
 	<artifactId>mvn-persistence-parent</artifactId>
-	<version>2.22.0</version>
+	<version>2.23.0</version>
 	<packaging>pom</packaging>
 
 	<name>${project.artifactId}</name>
@@ -436,6 +436,15 @@
 			</plugins>
 
 		</pluginManagement>
+
+		<plugins>
+
+			<plugin>
+				<inherited>true</inherited>
+				<artifactId>maven-source-plugin</artifactId>
+			</plugin>
+
+		</plugins>
 
 	</build>
 
