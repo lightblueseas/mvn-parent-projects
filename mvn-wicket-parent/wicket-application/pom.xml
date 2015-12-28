@@ -4,10 +4,10 @@
 	<parent>
 		<groupId>de.alpharogroup</groupId>
 		<artifactId>mvn-wicket-parent</artifactId>
-		<version>7.1.11</version>
+		<version>7.1.12</version>
 	</parent>
 	<artifactId>wicket-application</artifactId>
-	<version>7.3.12</version>
+	<version>7.3.13</version>
 	<packaging>pom</packaging>
 
 	<name>${project.artifactId}</name>

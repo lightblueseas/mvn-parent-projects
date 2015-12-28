@@ -5,11 +5,11 @@
 	<parent>
 		<groupId>de.alpharogroup</groupId>
 		<artifactId>mvn-java-parent</artifactId>
-		<version>2.5.0</version>
+		<version>2.6.0</version>
 	</parent>
 
 	<artifactId>mvn-persistence-parent</artifactId>
-	<version>2.23.0</version>
+	<version>2.25.0</version>
 	<packaging>pom</packaging>
 
 	<name>${project.artifactId}</name>
@@ -47,7 +47,9 @@
 		<tomcat-dbcp.version>7.0.65</tomcat-dbcp.version>
 		<!-- DB UNIT version -->
 		<dbunit.version>2.5.1</dbunit.version>
-		<!-- NEW EXTENSIONS LIB versions -->
+		<!-- RESOURCEBUNDLE-CORE version -->
+		<resourcebundle-inspector.version>2.7.0</resourcebundle-inspector.version>
+		<!-- EXTENSIONS LIB versions -->
 		<extensions-lib.version>4.8.0</extensions-lib.version>
 		<jcommons-lang.version>${extensions-lib.version}</jcommons-lang.version>
 		<xml-extensions.version>${extensions-lib.version}</xml-extensions.version>
@@ -211,7 +213,13 @@
 				<artifactId>postgresql</artifactId>
 				<version>${postgresql.version}</version>
 			</dependency>
-			<!-- NEW EXTENSIONS LIB DEPENDENCIES -->
+			<!-- RESOURCEBUNDLE-CORE DEPENDENCIES -->
+			<dependency>
+				<groupId>de.alpharogroup</groupId>
+				<artifactId>resourcebundle-inspector</artifactId>
+				<version>${resourcebundle-inspector.version}</version>
+			</dependency>
+			<!-- EXTENSIONS LIB DEPENDENCIES -->
 			<dependency>
 				<groupId>de.alpharogroup</groupId>
 				<artifactId>jcommons-lang</artifactId>

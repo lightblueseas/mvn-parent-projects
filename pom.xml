@@ -5,7 +5,7 @@
 
 	<groupId>de.alpharogroup</groupId>
 	<artifactId>mvn-parent-projects</artifactId>
-	<version>1.1.0</version>
+	<version>1.2.0</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
@@ -116,7 +116,7 @@
 		<!-- MAVEN GPG PLUGIN version -->
 		<maven-gpg-plugin.version>1.5</maven-gpg-plugin.version>
 		<!-- NEXUS STAGING MAVEN PLUGIN version -->
-		<nexus-staging-maven-plugin.version>1.6.5</nexus-staging-maven-plugin.version>
+		<nexus-staging-maven-plugin.version>1.6.6</nexus-staging-maven-plugin.version>
 		<!-- MAVEN SCM-PUBLISH PLUGIN version -->
 		<maven-scm-publish-plugin.version>1.1</maven-scm-publish-plugin.version>
 	</properties>
