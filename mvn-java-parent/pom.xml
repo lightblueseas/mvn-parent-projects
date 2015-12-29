@@ -30,19 +30,22 @@
 		<!-- UNIT TEST versions -->
 		<testng.version>6.9.10</testng.version>
 		<junit.version>4.12</junit.version>
-		<!-- LICENSE MAVEN PLUGIN versions -->
+		<!-- LICENSE-MAVEN-PLUGIN versions -->
 		<license-maven-plugin.version>2.8</license-maven-plugin.version>
-		<!-- MAVEN SUREFIRE PLUGIN versions -->
+		<!-- MAVEN-SUREFIRE-PLUGIN versions -->
 		<maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
-		<!-- COVERAGE MAVEN PLUGIN versions -->
+		<!-- COVERAGE-MAVEN-PLUGIN versions -->
 		<coveralls-maven-plugin.version>3.0.1</coveralls-maven-plugin.version>
 		<cobertura-maven-plugin.version>2.6</cobertura-maven-plugin.version>
-		<!-- PROPERTIES MAVEN PLUGIN versions -->
+		<maven-pmd-plugin.version>3.6</maven-pmd-plugin.version>
+		<!-- PROPERTIES-MAVEN-PLUGIN versions -->
 		<properties-maven-plugin.version>1.0.0</properties-maven-plugin.version>
-		<!-- EXEC MAVEN PLUGIN versions -->
+		<!-- EXEC-MAVEN-PLUGIN versions -->
 		<exec-maven-plugin.version>1.4.0</exec-maven-plugin.version>
-		<!-- MAVEN ANTRUN PLUGIN versions -->
+		<!-- MAVEN-ANTRUN-PLUGIN versions -->
 		<maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
+		<!-- LOMBOK-MAVEN-PLUGIN versions -->
+		<lombok-maven-plugin.version>1.16.6.1</lombok-maven-plugin.version>
 	</properties>
 
 	<dependencyManagement>
@@ -247,6 +250,12 @@
 				</plugin>
 
 				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-pmd-plugin</artifactId>
+					<version>${maven-pmd-plugin.version}</version>
+				</plugin>
+
+				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>properties-maven-plugin</artifactId>
 					<version>${properties-maven-plugin.version}</version>
@@ -261,6 +270,21 @@
 							<phase>package</phase>
 							<goals>
 								<goal>java</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				<!--This plugin is used to delombok lombokified java classes if this
+					is needed. -->
+				<plugin>
+					<groupId>org.projectlombok</groupId>
+					<artifactId>lombok-maven-plugin</artifactId>
+					<version>${lombok-maven-plugin.version}</version>
+					<executions>
+						<execution>
+							<phase>generate-sources</phase>
+							<goals>
+								<goal>delombok</goal>
 							</goals>
 						</execution>
 					</executions>
