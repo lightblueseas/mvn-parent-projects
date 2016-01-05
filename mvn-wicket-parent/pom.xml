@@ -13,7 +13,7 @@
 
 	<artifactId>mvn-wicket-parent</artifactId>
 	<packaging>pom</packaging>
-	<version>7.1.12</version>
+	<version>6.20.0</version>
 
 	<name>${project.artifactId}</name>
 
@@ -26,12 +26,12 @@
 		<!-- Means for versions 7.0.0 <= x < 7.99 For more information see https://maven.apache.org/enforcer/enforcer-rules/versionRanges.html
 			and https://docs.oracle.com/middleware/1212/core/MAVEN/maven_version.htm#MAVEN402
 			7.3 Version Range References -->
-		<wicket.version>[7.0.0,7.99)</wicket.version>
+		<wicket.version>[6.0.0,6.99)</wicket.version>
 		<!-- WICKETSTUFF versions -->
-		<wicketstuff.version>[7.0.0,7.99)</wicketstuff.version>
+		<wicketstuff.version>[6.0.0,6.99)</wicketstuff.version>
 		<!-- TODO change to 7.0.0 -->
 		<wiquery-core.version>6.13.0</wiquery-core.version>
-		<wicket-js-addons.version>7.1.0</wicket-js-addons.version>
+		<wicket-js-addons.version>6.18.0</wicket-js-addons.version>
 
 		<servlet-api.version>3.1.0</servlet-api.version>
 		<!-- NEW EXTENSIONS LIB versions -->
