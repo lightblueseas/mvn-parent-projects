@@ -13,7 +13,7 @@
 
 	<artifactId>mvn-wicket-parent</artifactId>
 	<packaging>pom</packaging>
-	<version>6.20.0</version>
+	<version>6.21.0</version>
 
 	<name>${project.artifactId}</name>
 
@@ -31,17 +31,17 @@
 		<wicketstuff.version>[6.0.0,6.99)</wicketstuff.version>
 		<!-- TODO change to 7.0.0 -->
 		<wiquery-core.version>6.13.0</wiquery-core.version>
-		<wicket-js-addons.version>6.18.0</wicket-js-addons.version>
-
+		<wicket-js-addons.version>6.21.0</wicket-js-addons.version>
+		<!-- SERVLET-API version -->
 		<servlet-api.version>3.1.0</servlet-api.version>
 		<!-- NEW EXTENSIONS LIB versions -->
 		<extensions-lib.version>4.8.0</extensions-lib.version>
-		<silly-collections.version>${extensions-lib.version}</silly-collections.version>
 		<email-tails.version>${extensions-lib.version}</email-tails.version>
 		<file-worker.version>${extensions-lib.version}</file-worker.version>
 		<gen-tree.version>${extensions-lib.version}</gen-tree.version>
 		<jcommons-lang.version>${extensions-lib.version}</jcommons-lang.version>
 		<net-extensions.version>${extensions-lib.version}</net-extensions.version>
+		<silly-collections.version>${extensions-lib.version}</silly-collections.version>
 		<swing-components.version>${extensions-lib.version}</swing-components.version>
 		<test-objects.version>${extensions-lib.version}</test-objects.version>
 		<vintage-time.version>${extensions-lib.version}</vintage-time.version>
