@@ -434,6 +434,52 @@
 				</plugins>
 			</build>
 		</profile>
+		
+		
+		<profile>
+			<id>delombok</id>
+			<!-- This profile can generate the classes(with all getter and setter and other methods that provide lombok) that uses lombok annotations. -->
+			<activation>
+				<property>
+					<name>performRelease</name>
+					<value>true</value>
+				</property>
+			</activation>
+
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.projectlombok</groupId>
+						<artifactId>lombok-maven-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>delombok</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>delombok</goal>
+								</goals>
+								<configuration>
+									<addOutputDirectory>false</addOutputDirectory>
+									<sourceDirectory>src/main/java</sourceDirectory>
+								</configuration>
+							</execution>
+							<execution>
+								<id>test-delombok</id>
+								<phase>generate-test-sources</phase>
+								<goals>
+									<goal>testDelombok</goal>
+								</goals>
+								<configuration>
+									<addOutputDirectory>false</addOutputDirectory>
+									<sourceDirectory>src/test/java</sourceDirectory>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+
+		</profile>
 
 	</profiles>
 
