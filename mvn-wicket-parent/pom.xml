@@ -34,7 +34,7 @@
 		<wicket-js-addons.version>6.21.0</wicket-js-addons.version>
 		<!-- SERVLET-API version -->
 		<servlet-api.version>3.1.0</servlet-api.version>
-		<!-- NEW EXTENSIONS LIB versions -->
+		<!-- EXTENSIONS LIB versions -->
 		<extensions-lib.version>4.8.0</extensions-lib.version>
 		<email-tails.version>${extensions-lib.version}</email-tails.version>
 		<file-worker.version>${extensions-lib.version}</file-worker.version>
