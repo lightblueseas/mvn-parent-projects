@@ -11,7 +11,7 @@
 	</parent>
 
 	<artifactId>mvn-java-parent</artifactId>
-	<version>2.6.0</version>
+	<version>2.7.0</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
@@ -434,8 +434,8 @@
 				</plugins>
 			</build>
 		</profile>
-		
-		
+
+
 		<profile>
 			<id>delombok</id>
 			<!-- This profile can generate the classes(with all getter and setter and other methods that provide lombok) that uses lombok annotations. -->
