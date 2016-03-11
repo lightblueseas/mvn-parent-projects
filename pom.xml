@@ -5,7 +5,7 @@
 
 	<groupId>de.alpharogroup</groupId>
 	<artifactId>mvn-parent-projects</artifactId>
-	<version>1.3.0</version>
+	<version>1.4.0</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
@@ -86,7 +86,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- MAVEN PLUGIN versions -->
 		<!-- MAVEN COMPILER PLUGIN version -->
-		<maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
+		<maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
@@ -96,9 +96,9 @@
 		<!-- MAVEN DEPENDENCY PLUGIN version -->
 		<maven-dependency-plugin.version>2.10</maven-dependency-plugin.version>
 		<!-- MAVEN SOURCE PLUGIN version -->
-		<maven-source-plugin.version>2.4</maven-source-plugin.version>
+		<maven-source-plugin.version>3.0.0</maven-source-plugin.version>
 		<!-- MAVEN CLEAN PLUGIN version -->
-		<maven-clean-plugin.version>2.6.1</maven-clean-plugin.version>
+		<maven-clean-plugin.version>3.0.0</maven-clean-plugin.version>
 		<!-- MAVEN INSTALL PLUGIN versions -->
 		<maven-install-plugin.version>2.5.2</maven-install-plugin.version>
 		<!-- MAVEN JAVADOC PLUGIN version -->
@@ -108,17 +108,17 @@
 		<!-- MAVEN RESOURCES PLUGIN version -->
 		<maven-resources-plugin.version>2.7</maven-resources-plugin.version>
 		<!-- BUILD-HELPER MAVEN PLUGIN versions -->
-		<build-helper-maven-plugin.version>1.9.1</build-helper-maven-plugin.version>
+		<build-helper-maven-plugin.version>1.10</build-helper-maven-plugin.version>
 		<!-- MAVEN ECLIPSE PLUGIN version -->
-		<maven-eclipse-plugin.version>2.9</maven-eclipse-plugin.version>
+		<maven-eclipse-plugin.version>2.10</maven-eclipse-plugin.version>
 		<!-- MAVEN ASSEBLY PLUGIN version -->
-		<maven-assembly-plugin.version>2.5.3</maven-assembly-plugin.version>
+		<maven-assembly-plugin.version>2.6</maven-assembly-plugin.version>
 		<!-- MAVEN DEPLOY PLUGIN version -->
 		<maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
 		<!-- MAVEN RELEASE PLUGIN version -->
-		<maven-release-plugin.version>2.5.1</maven-release-plugin.version>
+		<maven-release-plugin.version>2.5.3</maven-release-plugin.version>
 		<!-- MAVEN GPG PLUGIN version -->
-		<maven-gpg-plugin.version>1.5</maven-gpg-plugin.version>
+		<maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
 		<!-- NEXUS STAGING MAVEN PLUGIN version -->
 		<nexus-staging-maven-plugin.version>1.6.6</nexus-staging-maven-plugin.version>
 		<!-- MAVEN SCM-PUBLISH PLUGIN version -->
