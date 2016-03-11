@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>de.alpharogroup</groupId>
 		<artifactId>mvn-wicket-parent</artifactId>
-		<version>6.21.2</version>
+		<version>7.1.15</version>
 	</parent>
 
 	<artifactId>wicket-application</artifactId>
@@ -15,7 +15,7 @@
 
 	<properties>
 		<!-- WICKET-SOURCE version -->
-		<wicket-source.version>6.0.0.8</wicket-source.version>
+		<wicket-source.version>7.0.0</wicket-source.version>
 		<!-- JETTY 9 version -->
 		<jetty9.version>9.3.0.v20150612</jetty9.version>
 		<jetty9-runner.version>3.5.0</jetty9-runner.version>
