@@ -78,7 +78,9 @@
 
 	<modules>
 		<module>mvn-java-parent</module>
+		<module>mvn-persistence-parent</module>
 		<module>mvn-wicket-parent</module>
+		<module>wicket-application</module>
 	</modules>
 
 	<properties>
