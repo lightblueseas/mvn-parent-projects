@@ -17,14 +17,10 @@
 
 	<name>${project.artifactId}</name>
 
-	<modules>
-		<module>wicket-application</module>
-	</modules>
-
 	<properties>
 		<!-- WICKET version -->
-		<!-- Means for versions 7.0.0 <= x < 7.99 For more information see https://maven.apache.org/enforcer/enforcer-rules/versionRanges.html
-			and https://docs.oracle.com/middleware/1212/core/MAVEN/maven_version.htm#MAVEN402
+		<!-- Means for versions 7.0.0 <= x < 7.99 For more information see https://maven.apache.org/enforcer/enforcer-rules/versionRanges.html 
+			and https://docs.oracle.com/middleware/1212/core/MAVEN/maven_version.htm#MAVEN402 
 			7.3 Version Range References -->
 		<wicket.version>[7.0.0,7.99)</wicket.version>
 		<!-- WICKETSTUFF versions -->
@@ -189,6 +185,12 @@
 			<dependency>
 				<groupId>de.alpharogroup</groupId>
 				<artifactId>wicket-session-timeout</artifactId>
+				<version>${wicket-js-addons.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>de.alpharogroup</groupId>
+				<artifactId>wicket-collapsible</artifactId>
 				<version>${wicket-js-addons.version}</version>
 			</dependency>
 			<!-- NEW EXTENSIONS LIB DEPENDENCIES -->
