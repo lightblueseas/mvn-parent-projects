@@ -47,7 +47,9 @@
 		<!-- LOMBOK-MAVEN-PLUGIN versions -->
 		<lombok-maven-plugin.version>1.16.6.1</lombok-maven-plugin.version>
 		<!-- IZPACK-MAVEN-PLUGIN versions -->
-		<izpack-maven-plugin.version>5.0.6</izpack-maven-plugin.version>
+		<izpack.version>5.0.8</izpack.version>
+		<izpack-panel.version>${izpack.version}</izpack-panel.version>
+		<izpack-maven-plugin.version>${izpack.version}</izpack-maven-plugin.version>
 	</properties>
 
 	<dependencyManagement>
