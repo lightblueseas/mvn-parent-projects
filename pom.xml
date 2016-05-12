@@ -81,6 +81,7 @@
 		<module>mvn-persistence-parent</module>
 		<module>mvn-wicket-parent</module>
 		<module>wicket-application</module>
+		<module>mvn-ui-parent</module>
 	</modules>
 
 	<properties>
