@@ -50,11 +50,14 @@
 		<izpack.version>5.0.8</izpack.version>
 		<izpack-panel.version>${izpack.version}</izpack-panel.version>
 		<izpack-maven-plugin.version>${izpack.version}</izpack-maven-plugin.version>
+		<!-- JAVA-SEMVER versions -->
+		<java-semver.version>0.9.0</java-semver.version>
 	</properties>
 
 	<dependencyManagement>
 
 		<dependencies>
+
 			<!-- LOMBOK DEPENDENCIES -->
 			<dependency>
 				<groupId>org.projectlombok</groupId>
@@ -92,6 +95,12 @@
 				<groupId>org.testng</groupId>
 				<artifactId>testng</artifactId>
 				<version>${testng.version}</version>
+			</dependency>
+			<!-- JAVA-SEMVER DEPENDENCIES -->
+			<dependency>
+				<groupId>com.github.zafarkhaja</groupId>
+				<artifactId>java-semver</artifactId>
+				<version>${java-semver.version}</version>
 			</dependency>
 
 		</dependencies>
@@ -284,7 +293,7 @@
 						</execution>
 					</executions>
 				</plugin>
-				<!--This plugin is used to delombok lombokified java classes if this
+				<!--This plugin is used to delombok lombokified java classes if this 
 					is needed. -->
 				<plugin>
 					<groupId>org.projectlombok</groupId>
@@ -372,8 +381,8 @@
 		</profile>
 
 		<profile>
-			<!-- This profile is for generate or update the license header from source
-				files. for generate or update the license header you have to run this profile
+			<!-- This profile is for generate or update the license header from source 
+				files. for generate or update the license header you have to run this profile 
 				with this goal license:format. -->
 			<id>update-license-header</id>
 			<activation>
@@ -448,7 +457,7 @@
 
 		<profile>
 			<id>delombok</id>
-			<!-- This profile can generate the classes(with all getter and setter
+			<!-- This profile can generate the classes(with all getter and setter 
 				and other methods that provide lombok) that uses lombok annotations. -->
 			<activation>
 				<property>
