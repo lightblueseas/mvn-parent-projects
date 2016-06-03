@@ -7,18 +7,18 @@
 		<artifactId>mvn-java-parent</artifactId>
 		<version>2.12.0</version>
 	</parent>
-	
+
 	<artifactId>mvn-ui-parent</artifactId>
-	<version>1.1.0</version>
-	<packaging>pom</packaging>	
+	<version>1.2.0</version>
+	<packaging>pom</packaging>
 	<inceptionYear>2016</inceptionYear>
-	
+
 	<name>${project.artifactId}</name>
 
 	<description>
 		Parent project for general java ui projects.
 	</description>
-	
+
 
 	<properties>
 		<javahelp.version>2.0.02</javahelp.version>
@@ -38,12 +38,20 @@
 		<staging.dir>${project.build.directory}/staging</staging.dir>
 		<izpack.staging>${staging.dir}</izpack.staging>
 		<izpack.dir.app>${basedir}/src/main/izpack</izpack.dir.app>
-		<staging.dir.app>${staging.dir}</staging.dir.app>		
+		<staging.dir.app>${staging.dir}</staging.dir.app>
+		<!-- Plugin Framework for Java (PF4J) version -->
+		<pf4j.version>0.13.1</pf4j.version>
 	</properties>
-	
+
 	<dependencyManagement>
 
 		<dependencies>
+
+			<dependency>
+				<groupId>ro.fortsoft.pf4j</groupId>
+				<artifactId>pf4j</artifactId>
+				<version>${pf4j.version}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>org.codehaus.izpack</groupId>
@@ -159,12 +167,12 @@
 					<groupId>org.codehaus.izpack</groupId>
 					<artifactId>izpack-maven-plugin</artifactId>
 					<version>${izpack.version}</version>
-				</plugin>				
+				</plugin>
 
 			</plugins>
 
 		</pluginManagement>
 
 	</build>
-		
+
 </project>
