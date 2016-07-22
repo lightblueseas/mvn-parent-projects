@@ -11,7 +11,7 @@
 	</parent>
 
 	<artifactId>mvn-java-parent</artifactId>
-	<version>2.14.0</version>
+	<version>2.15.0</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
@@ -23,7 +23,7 @@
 
 	<properties>
 		<!-- LOMBOK version -->
-		<lombok.version>1.16.8</lombok.version>
+		<lombok.version>1.16.10</lombok.version>
 		<!-- LOGGING versions -->
 		<slf4j.version>1.6.4</slf4j.version>
 		<log4j.version>1.2.16</log4j.version>
