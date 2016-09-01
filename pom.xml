@@ -76,14 +76,6 @@
 		<url>https://github.com/lightblueseas/mvn-parent-projects/issues</url>
 	</issueManagement>
 
-	<modules>
-		<module>mvn-java-parent</module>
-		<module>mvn-persistence-parent</module>
-		<module>mvn-wicket-parent</module>
-		<module>wicket-application</module>
-		<module>mvn-ui-parent</module>
-	</modules>
-
 	<properties>
 		<!-- PROJECT encoding -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
