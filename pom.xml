@@ -5,7 +5,7 @@
 
 	<groupId>de.alpharogroup</groupId>
 	<artifactId>mvn-parent-projects</artifactId>
-	<version>1.5.0</version>
+	<version>1.6.0</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
@@ -258,7 +258,7 @@
 							<phase>package</phase>
 							<!-- append to the packaging phase. -->
 							<goals>
-								<goal>attached</goal>
+								<goal>single</goal>
 								<!-- goals == mojos -->
 							</goals>
 						</execution>
