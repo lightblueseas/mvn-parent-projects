@@ -1,11 +1,11 @@
 # mvn-parent-projects
 
-This project holds parent projects that holds general properties for specific projects.
+This project holds parent projects that holds general properties for specific maven projects.
 
 ## Key features:
 
-1. Provides several plugins in the pluginManagement section that are useful for projects.
-2. Provides several dependencies in the dependencyManagement section that are useful for projects.
+1. Provides several plugins in the pluginManagement section that are useful for maven projects.
+2. Provides several dependencies in the dependencyManagement section that are useful for maven projects.
 
 ## License
 
@@ -22,7 +22,7 @@ Add as parent project in the `pom.xml` file:
 	<parent>
 		<groupId>de.alpharogroup</groupId>
 		<artifactId>mvn-parent-projects</artifactId>
-		<version>1.5.0</version>
+		<version>1.6.0</version>
 		<relativePath></relativePath>
 	</parent>	
 
