@@ -26,6 +26,17 @@ Add as parent project in the `pom.xml` file:
 		<relativePath></relativePath>
 	</parent>	
 
+## Documentation and Examples
+
+In this parent project there is only one profile for for releasing artifacts (projects) on sonatype. The name of the profile is 'oss.sonatype.org-staged-release' and is self-explaining.
+
+From the shell you can execute it with the following command:
+```shell
+:~$ mvn clean deploy -Poss.sonatype.org-staged-release
+```
+This is executed on this project or in a project that have this project as parent or parent of parent and so on. A detailed description how to use it is [here](https://github.com/lightblueseas/mvn-parent-projects/issues/2).
+
+
 ## Want to Help and improve it? ###
 
 The source code for mvn-parent-projects are on GitHub. Please feel free to fork and send pull requests!
