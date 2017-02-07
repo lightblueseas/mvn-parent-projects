@@ -5,7 +5,7 @@
 
 	<groupId>de.alpharogroup</groupId>
 	<artifactId>mvn-parent-projects</artifactId>
-	<version>1.6.0</version>
+	<version>1.7.0</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
@@ -118,6 +118,8 @@
 		<nexus-staging-maven-plugin.version>1.6.7</nexus-staging-maven-plugin.version>
 		<!-- MAVEN SCM-PUBLISH PLUGIN version -->
 		<maven-scm-publish-plugin.version>1.1</maven-scm-publish-plugin.version>
+		<!-- MAVEN CHANGELOG PLUGIN version -->
+		<maven-changelog-plugin.version>2.3</maven-changelog-plugin.version>
 	</properties>
 
 	<build>
@@ -317,6 +319,14 @@
 				<plugin>
 					<artifactId>maven-dependency-plugin</artifactId>
 					<version>${maven-dependency-plugin.version}</version>
+				</plugin>
+				<!-- 
+				See usage on: http://maven.apache.org/plugins/maven-changelog-plugin/usage.html
+				-->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-changelog-plugin</artifactId>
+					<version>${maven-changelog-plugin.version}</version>
 				</plugin>
 
 			</plugins>
