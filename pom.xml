@@ -89,7 +89,7 @@
 		<maven.compiler.showWarnings>true</maven.compiler.showWarnings>
 		<maven.compiler.debug>true</maven.compiler.debug>
 		<!-- MAVEN DEPENDENCY PLUGIN version -->
-		<maven-dependency-plugin.version>2.10</maven-dependency-plugin.version>
+		<maven-dependency-plugin.version>3.0.0</maven-dependency-plugin.version>
 		<!-- MAVEN SOURCE PLUGIN version -->
 		<maven-source-plugin.version>3.0.1</maven-source-plugin.version>
 		<!-- MAVEN CLEAN PLUGIN version -->
@@ -101,9 +101,9 @@
 		<!-- MAVEN-JAR-PLUGIN versions -->
 		<maven-jar-plugin.version>3.0.2</maven-jar-plugin.version>
 		<!-- MAVEN RESOURCES PLUGIN version -->
-		<maven-resources-plugin.version>3.0.1</maven-resources-plugin.version>
+		<maven-resources-plugin.version>3.0.2</maven-resources-plugin.version>
 		<!-- BUILD-HELPER MAVEN PLUGIN versions -->
-		<build-helper-maven-plugin.version>1.12</build-helper-maven-plugin.version>
+		<build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
 		<!-- MAVEN ECLIPSE PLUGIN version -->
 		<maven-eclipse-plugin.version>2.10</maven-eclipse-plugin.version>
 		<!-- MAVEN ASSEBLY PLUGIN version -->
