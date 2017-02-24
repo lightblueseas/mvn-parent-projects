@@ -1,11 +1,11 @@
 # mvn-parent-projects
 
-This project holds parent projects that holds general properties for specific projects.
+This project holds parent projects that holds general properties for specific maven projects.
 
 ## Key features:
 
-1. Provides several plugins in the pluginManagement section that are useful for projects.
-2. Provides several dependencies in the dependencyManagement section that are useful for projects.
+1. Provides several plugins in the pluginManagement section that are useful for maven projects.
+2. Provides several dependencies in the dependencyManagement section that are useful for maven projects.
 
 ## License
 
@@ -22,9 +22,20 @@ Add as parent project in the `pom.xml` file:
 	<parent>
 		<groupId>de.alpharogroup</groupId>
 		<artifactId>mvn-parent-projects</artifactId>
-		<version>1.5.0</version>
+		<version>1.6.0</version>
 		<relativePath></relativePath>
 	</parent>	
+
+## Documentation and Examples
+
+In this parent project there is only one profile for for releasing artifacts (projects) on sonatype. The name of the profile is 'oss.sonatype.org-staged-release' and is self-explaining.
+
+From the shell you can execute it with the following command:
+```shell
+:~$ mvn clean deploy -Poss.sonatype.org-staged-release
+```
+This is executed on this project or in a project that have this project as parent or parent of parent and so on. A detailed description how to use it is [here](https://github.com/lightblueseas/mvn-parent-projects/issues/2).
+
 
 ## Want to Help and improve it? ###
 
