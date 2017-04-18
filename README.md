@@ -22,7 +22,7 @@ Add as parent project in the `pom.xml` file:
 	<parent>
 		<groupId>de.alpharogroup</groupId>
 		<artifactId>mvn-parent-projects</artifactId>
-		<version>1.6.0</version>
+		<version>1.8.0</version>
 		<relativePath></relativePath>
 	</parent>	
 
@@ -49,6 +49,10 @@ To share your changes, [submit a pull request](https://github.com/lightblueseas/
 
 Do not hesitate to contact the mvn-parent-projects developers with your questions, concerns, comments, bug reports, or feature requests.
 - Feature requests, questions and bug reports can be reported at the [issues page](https://github.com/lightblueseas/mvn-parent-projects/issues).
+
+## Note
+
+No animals were harmed in the making of this library.
 
 # Donate
 
