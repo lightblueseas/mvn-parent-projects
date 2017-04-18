@@ -5,7 +5,7 @@
 
 	<groupId>de.alpharogroup</groupId>
 	<artifactId>mvn-parent-projects</artifactId>
-	<version>1.7.0</version>
+	<version>1.8.0</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
@@ -297,10 +297,12 @@
 					</executions>
 				</plugin>
 				<!-- The Nexus Staging Maven Plugin is the recommended way to deploy
-					your components to OSSRH and release them to the Central Repository. _______________
+					your components to OSSRH and release them to the Central Repository. 
+					_______________
 					If your version is a release version (does not end in -SNAPSHOT) and with
 					this setup in place, you can run a deployment to OSSRH and an automated release
-					to the Central Repository with the usual: mvn clean deploy _________________________
+					to the Central Repository with the usual: mvn clean deploy 
+					_________________________
 					With the property autoReleaseAfterClose set to false you can manually inspect
 					the staging repository in Nexus and trigger a release of the staging repository
 					later with: mvn nexus-staging:release. -->
