@@ -11,6 +11,10 @@ This project holds parent projects that holds general properties for specific ma
 
 The source code comes under the liberal Apache License V2.0, making mvn-parent-projects great for all types of  applications.
 
+## Build status
+[![Build Status](https://travis-ci.org/lightblueseas/mvn-parent-projects.svg?branch=master)](https://travis-ci.org/lightblueseas/mvn-parent-projects)
+
+
 ## Maven Central
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/de.alpharogroup/mvn-parent-projects/badge.svg)](https://maven-badges.herokuapp.com/maven-central/de.alpharogroup/mvn-parent-projects)
