@@ -1,4 +1,4 @@
-# mvn-parent-projects
+# Overview
 
 This project holds parent projects that holds general properties for specific maven projects.
 
@@ -40,6 +40,8 @@ From the shell you can execute it with the following command:
 ```
 This is executed on this project or in a project that have this project as parent or parent of parent and so on. A detailed description how to use it is [here](https://github.com/lightblueseas/mvn-parent-projects/issues/2).
 
+## Open Issues
+[![Open Issues](https://img.shields.io/github/issues/lightblueseas/mvn-parent-projects.svg?style=flat)](https://github.com/lightblueseas/mvn-parent-projects/issues) 
 
 ## Want to Help and improve it? ###
 
