@@ -5,7 +5,7 @@
 
 	<groupId>de.alpharogroup</groupId>
 	<artifactId>mvn-parent-projects</artifactId>
-	<version>1.8.0</version>
+	<version>1.9.0</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
@@ -115,7 +115,7 @@
 		<!-- MAVEN GPG PLUGIN version -->
 		<maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
 		<!-- NEXUS STAGING MAVEN PLUGIN version -->
-		<nexus-staging-maven-plugin.version>1.6.7</nexus-staging-maven-plugin.version>
+		<nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
 		<!-- MAVEN SCM-PUBLISH PLUGIN version -->
 		<maven-scm-publish-plugin.version>1.1</maven-scm-publish-plugin.version>
 		<!-- MAVEN CHANGELOG PLUGIN version -->
@@ -296,7 +296,7 @@
 						</execution>
 					</executions>
 				</plugin>
-				<!-- The Nexus Staging Maven Plugin is the recommended way to deploy
+				<!--    The Nexus Staging Maven Plugin is the recommended way to deploy
 					your components to OSSRH and release them to the Central Repository. 
 					_______________
 					If your version is a release version (does not end in -SNAPSHOT) and with
