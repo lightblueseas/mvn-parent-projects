@@ -14,7 +14,6 @@ The source code comes under the liberal Apache License V2.0, making mvn-parent-p
 ## Build status
 [![Build Status](https://travis-ci.org/lightblueseas/mvn-parent-projects.svg?branch=master)](https://travis-ci.org/lightblueseas/mvn-parent-projects)
 
-
 ## Maven Central
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/de.alpharogroup/mvn-parent-projects/badge.svg)](https://maven-badges.herokuapp.com/maven-central/de.alpharogroup/mvn-parent-projects)
@@ -26,7 +25,7 @@ Add as parent project in the `pom.xml` file:
 	<parent>
 		<groupId>de.alpharogroup</groupId>
 		<artifactId>mvn-parent-projects</artifactId>
-		<version>1.8.0</version>
+		<version>1.9.0</version>
 		<relativePath></relativePath>
 	</parent>	
 
