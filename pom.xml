@@ -5,7 +5,7 @@
 
 	<groupId>de.alpharogroup</groupId>
 	<artifactId>mvn-parent-projects</artifactId>
-	<version>1.11.0-SNAPSHOT</version>
+	<version>1.11.0</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
@@ -121,7 +121,7 @@
 		<!-- MAVEN CHANGELOG PLUGIN version -->
 		<maven-changelog-plugin.version>2.3</maven-changelog-plugin.version>
 		<!-- VERSIONS-MAVEN-PLUGIN versions -->
-		<versions-maven-plugin.version>2.4.0</versions-maven-plugin.version>
+		<versions-maven-plugin.version>2.4</versions-maven-plugin.version>
 	</properties>
 
 	<build>
