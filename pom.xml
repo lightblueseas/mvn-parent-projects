@@ -195,8 +195,8 @@
 						<notimestamp>true</notimestamp>
 						<quiet>true</quiet>
 						<links>
-							<link>http://docs.oracle.com/javase/6/docs/api/</link>
-							<link>http://docs.oracle.com/javaee/6/api/</link>
+							<link>http://docs.oracle.com/javase/8/docs/api/</link>
+							<link>http://docs.oracle.com/javaee/7/api/</link>
 						</links>
 					</configuration>
 					<executions>
