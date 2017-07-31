@@ -48,7 +48,7 @@ The source code for mvn-parent-projects are on GitHub. Please feel free to fork 
 
 Create your own fork of [lightblueseas/mvn-parent-projects/fork](https://github.com/lightblueseas/mvn-parent-projects/fork)
 
-To share your changes, [submit a pull request](https://github.com/lightblueseas/mvn-parent-projects/pull/new/master).
+To share your changes, [submit a pull request](https://github.com/lightblueseas/mvn-parent-projects/pull/new/develop).
 
 ## Contacting the Developers
 
