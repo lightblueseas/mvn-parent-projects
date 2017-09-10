@@ -107,7 +107,7 @@
 		<!-- MAVEN ECLIPSE PLUGIN version -->
 		<maven-eclipse-plugin.version>2.10</maven-eclipse-plugin.version>
 		<!-- MAVEN ASSEBLY PLUGIN version -->
-		<maven-assembly-plugin.version>3.0.0</maven-assembly-plugin.version>
+		<maven-assembly-plugin.version>3.1.0</maven-assembly-plugin.version>
 		<!-- MAVEN DEPLOY PLUGIN version -->
 		<maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
 		<!-- MAVEN RELEASE PLUGIN version -->
