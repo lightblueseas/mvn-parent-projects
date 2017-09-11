@@ -5,7 +5,7 @@
 
 	<groupId>de.alpharogroup</groupId>
 	<artifactId>mvn-parent-projects</artifactId>
-	<version>1.10.0</version>
+	<version>1.12.0</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
@@ -81,7 +81,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- MAVEN PLUGIN versions -->
 		<!-- MAVEN COMPILER PLUGIN version -->
-		<maven-compiler-plugin.version>3.6.1</maven-compiler-plugin.version>
+		<maven-compiler-plugin.version>3.6.2</maven-compiler-plugin.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
@@ -89,7 +89,7 @@
 		<maven.compiler.showWarnings>true</maven.compiler.showWarnings>
 		<maven.compiler.debug>true</maven.compiler.debug>
 		<!-- MAVEN DEPENDENCY PLUGIN version -->
-		<maven-dependency-plugin.version>3.0.0</maven-dependency-plugin.version>
+		<maven-dependency-plugin.version>3.0.1</maven-dependency-plugin.version>
 		<!-- MAVEN SOURCE PLUGIN version -->
 		<maven-source-plugin.version>3.0.1</maven-source-plugin.version>
 		<!-- MAVEN CLEAN PLUGIN version -->
@@ -97,7 +97,7 @@
 		<!-- MAVEN INSTALL PLUGIN versions -->
 		<maven-install-plugin.version>2.5.2</maven-install-plugin.version>
 		<!-- MAVEN JAVADOC PLUGIN version -->
-		<maven-javadoc-plugin.version>2.10.4</maven-javadoc-plugin.version>
+		<maven-javadoc-plugin.version>3.0.0-M1</maven-javadoc-plugin.version>
 		<!-- MAVEN-JAR-PLUGIN versions -->
 		<maven-jar-plugin.version>3.0.2</maven-jar-plugin.version>
 		<!-- MAVEN RESOURCES PLUGIN version -->
@@ -107,7 +107,7 @@
 		<!-- MAVEN ECLIPSE PLUGIN version -->
 		<maven-eclipse-plugin.version>2.10</maven-eclipse-plugin.version>
 		<!-- MAVEN ASSEBLY PLUGIN version -->
-		<maven-assembly-plugin.version>3.0.0</maven-assembly-plugin.version>
+		<maven-assembly-plugin.version>3.1.0</maven-assembly-plugin.version>
 		<!-- MAVEN DEPLOY PLUGIN version -->
 		<maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
 		<!-- MAVEN RELEASE PLUGIN version -->
@@ -121,7 +121,7 @@
 		<!-- MAVEN CHANGELOG PLUGIN version -->
 		<maven-changelog-plugin.version>2.3</maven-changelog-plugin.version>
 		<!-- VERSIONS-MAVEN-PLUGIN versions -->
-		<versions-maven-plugin.version>2.4.0</versions-maven-plugin.version>
+		<versions-maven-plugin.version>2.4</versions-maven-plugin.version>
 	</properties>
 
 	<build>
@@ -195,8 +195,8 @@
 						<notimestamp>true</notimestamp>
 						<quiet>true</quiet>
 						<links>
-							<link>http://docs.oracle.com/javase/6/docs/api/</link>
-							<link>http://docs.oracle.com/javaee/6/api/</link>
+							<link>http://docs.oracle.com/javase/8/docs/api/</link>
+							<link>http://docs.oracle.com/javaee/7/api/</link>
 						</links>
 					</configuration>
 					<executions>

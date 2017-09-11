@@ -25,7 +25,7 @@ Add as parent project in the `pom.xml` file:
 	<parent>
 		<groupId>de.alpharogroup</groupId>
 		<artifactId>mvn-parent-projects</artifactId>
-		<version>1.9.0</version>
+		<version>1.12.0</version>
 		<relativePath></relativePath>
 	</parent>	
 
@@ -48,7 +48,7 @@ The source code for mvn-parent-projects are on GitHub. Please feel free to fork 
 
 Create your own fork of [lightblueseas/mvn-parent-projects/fork](https://github.com/lightblueseas/mvn-parent-projects/fork)
 
-To share your changes, [submit a pull request](https://github.com/lightblueseas/mvn-parent-projects/pull/new/master).
+To share your changes, [submit a pull request](https://github.com/lightblueseas/mvn-parent-projects/pull/new/develop).
 
 ## Contacting the Developers
 
