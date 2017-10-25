@@ -122,6 +122,8 @@
 		<maven-changelog-plugin.version>2.3</maven-changelog-plugin.version>
 		<!-- VERSIONS-MAVEN-PLUGIN versions -->
 		<versions-maven-plugin.version>2.4</versions-maven-plugin.version>
+		<!-- FORMATTER-MAVEN-PLUGIN version -->
+		<formatter-maven-plugin.version>2.0.1</formatter-maven-plugin.version>
 	</properties>
 
 	<build>
@@ -339,6 +341,12 @@
 					<version>${versions-maven-plugin.version}</version>
 				</plugin>
 
+				<plugin>
+				    <groupId>net.revelc.code.formatter</groupId>
+				    <artifactId>formatter-maven-plugin</artifactId>
+				    <version>${formatter-maven-plugin.version}</version>
+				</plugin>
+				
 			</plugins>
 
 		</pluginManagement>
