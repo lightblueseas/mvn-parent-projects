@@ -123,7 +123,7 @@
 		<!-- VERSIONS-MAVEN-PLUGIN versions -->
 		<versions-maven-plugin.version>2.4</versions-maven-plugin.version>
 		<!-- FORMATTER-MAVEN-PLUGIN version -->
-		<formatter-maven-plugin.version>2.0.1</formatter-maven-plugin.version>
+		<formatter-maven-plugin.version>2.6.0</formatter-maven-plugin.version>
 	</properties>
 
 	<build>
