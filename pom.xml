@@ -5,7 +5,7 @@
 
 	<groupId>de.alpharogroup</groupId>
 	<artifactId>mvn-parent-projects</artifactId>
-	<version>1.14.0</version>
+	<version>1.15.0</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
@@ -123,7 +123,9 @@
 		<!-- VERSIONS-MAVEN-PLUGIN versions -->
 		<versions-maven-plugin.version>2.4</versions-maven-plugin.version>
 		<!-- FORMATTER-MAVEN-PLUGIN version -->
-		<formatter-maven-plugin.version>2.0.1</formatter-maven-plugin.version>
+		<formatter-maven-plugin.version>2.6.0</formatter-maven-plugin.version>
+		<!-- SORTPOM-MAVEN-PLUGIN version -->
+		<sortpom-maven-plugin.version>2.8.0</sortpom-maven-plugin.version>
 	</properties>
 
 	<build>
@@ -134,7 +136,7 @@
 
 				<plugin>
 					<inherited>true</inherited>
-					<!-- NOTE: We don't need a groupId specification because the group is
+					<!-- NOTE: We don't need a groupId specification because the group is 
 						org.apache.maven.plugins ...which is assumed by default. -->
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>${maven-compiler-plugin.version}</version>
@@ -148,8 +150,8 @@
 						<debug>${maven.compiler.debug}</debug>
 					</configuration>
 				</plugin>
-				<!-- Configuring maven source plugin: To attach source artifacts to your
-					build we execute the source:jar goal from the source plugin during the package
+				<!-- Configuring maven source plugin: To attach source artifacts to your 
+					build we execute the source:jar goal from the source plugin during the package 
 					phase. -->
 				<plugin>
 					<inherited>true</inherited>
@@ -164,7 +166,7 @@
 						</execution>
 					</executions>
 				</plugin>
-				<!-- Configuring maven clean plugin: deletes the generated test-output
+				<!-- Configuring maven clean plugin: deletes the generated test-output 
 					directories that are generated from testng. -->
 				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
@@ -184,7 +186,7 @@
 					<artifactId>maven-install-plugin</artifactId>
 					<version>${maven-install-plugin.version}</version>
 				</plugin>
-				<!-- Configuring Maven Javadoc Plugin: To attach javadoc artifacts to
+				<!-- Configuring Maven Javadoc Plugin: To attach javadoc artifacts to 
 					your build we execute the javadoc:jar goal from the javadoc plugin. -->
 				<plugin>
 					<inherited>true</inherited>
@@ -334,7 +336,7 @@
 					<artifactId>maven-changelog-plugin</artifactId>
 					<version>${maven-changelog-plugin.version}</version>
 				</plugin>
-				
+
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>versions-maven-plugin</artifactId>
@@ -342,11 +344,32 @@
 				</plugin>
 
 				<plugin>
-				    <groupId>net.revelc.code.formatter</groupId>
-				    <artifactId>formatter-maven-plugin</artifactId>
-				    <version>${formatter-maven-plugin.version}</version>
+					<groupId>net.revelc.code.formatter</groupId>
+					<artifactId>formatter-maven-plugin</artifactId>
+					<version>${formatter-maven-plugin.version}</version>
 				</plugin>
-				
+
+
+				<plugin>
+					<groupId>com.github.ekryd.sortpom</groupId>
+					<artifactId>sortpom-maven-plugin</artifactId>
+					<version>${sortpom-maven-plugin.version}</version>
+					<configuration>
+						<encoding>${project.build.sourceEncoding}</encoding>
+						<sortProperties>false</sortProperties>
+						<keepBlankLines>true</keepBlankLines>
+						<sortDependencies>scope</sortDependencies>
+					</configuration>
+					<executions>
+						<execution>
+							<goals>
+								<goal>sort</goal>
+							</goals>
+							<phase>verify</phase>
+						</execution>
+					</executions>
+				</plugin>
+
 			</plugins>
 
 		</pluginManagement>
@@ -357,7 +380,7 @@
 
 		<profile>
 			<id>oss.sonatype.org-staged-release</id>
-			<!-- This is the profile to use for releasing into the staged release
+			<!-- This is the profile to use for releasing into the staged release 
 				repo. We need to sign the artifacts. -->
 			<activation>
 				<property>
