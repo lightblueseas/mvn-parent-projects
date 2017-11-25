@@ -27,6 +27,7 @@
 # maven generated files #
 #########################
 /target
+/pom.xml.bak
 
 #############
 # Zip files #
