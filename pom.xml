@@ -5,83 +5,24 @@
 
 	<groupId>de.alpharogroup</groupId>
 	<artifactId>mvn-parent-projects</artifactId>
-	<version>1.12.0</version>
+	<version>1.16.0</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
 	<name>${project.artifactId}</name>
 
-	<url>https://github.com/lightblueseas/mvn-parent-projects</url>
-
 	<description>
 		This project holds parent projects that holds general properties for specific projects.
 	</description>
 
-	<licenses>
-
-		<license>
-			<name>The Apache Software License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-			<distribution>repo</distribution>
-		</license>
-
-	</licenses>
-
-	<developers>
-
-		<developer>
-			<id>astrapi69</id>
-			<name>Asterios Raptis</name>
-			<email>astrapi69 at users.sf.net</email>
-			<timezone>Berlin</timezone>
-			<roles>
-				<role>Project manager</role>
-				<role>Developer</role>
-			</roles>
-		</developer>
-
-	</developers>
-
-	<organization>
-		<name>Alpha Ro Group UG (haftungsbeschrängt)</name>
-		<url>http://www.alpharogroup.de/</url>
-	</organization>
-
-	<scm>
-		<connection>scm:git:git:@github.com:lightblueseas/mvn-parent-projects.git</connection>
-		<developerConnection>scm:git:git@github.com:lightblueseas/mvn-parent-projects.git</developerConnection>
-		<url>git:@github.com:lightblueseas/mvn-parent-projects.git</url>
-	</scm>
-
-	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<name>Sonatype Nexus Snapshots</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
-		<repository>
-			<id>ossrh</id>
-			<name>Nexus Release Repository</name>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-		</repository>
-	</distributionManagement>
-
-	<ciManagement>
-		<system>travis-ci</system>
-		<url>https://travis-ci.org/lightblueseas/mvn-parent-projects</url>
-	</ciManagement>
-
-	<issueManagement>
-		<system>github</system>
-		<url>https://github.com/lightblueseas/mvn-parent-projects/issues</url>
-	</issueManagement>
+	<url>https://github.com/lightblueseas/mvn-parent-projects</url>
 
 	<properties>
 		<!-- PROJECT encoding -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- MAVEN PLUGIN versions -->
 		<!-- MAVEN COMPILER PLUGIN version -->
-		<maven-compiler-plugin.version>3.6.2</maven-compiler-plugin.version>
+		<maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
@@ -122,7 +63,70 @@
 		<maven-changelog-plugin.version>2.3</maven-changelog-plugin.version>
 		<!-- VERSIONS-MAVEN-PLUGIN versions -->
 		<versions-maven-plugin.version>2.4</versions-maven-plugin.version>
+		<!-- FORMATTER-MAVEN-PLUGIN version -->
+		<formatter-maven-plugin.version>2.6.0</formatter-maven-plugin.version>
+		<!-- SORTPOM-MAVEN-PLUGIN version -->
+		<sortpom-maven-plugin.version>2.8.0</sortpom-maven-plugin.version>
 	</properties>
+
+	<organization>
+		<name>Alpha Ro Group UG (haftungsbeschrängt)</name>
+		<url>http://www.alpharogroup.de/</url>
+	</organization>
+
+	<licenses>
+
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+
+	</licenses>
+
+	<developers>
+
+		<developer>
+			<id>astrapi69</id>
+			<name>Asterios Raptis</name>
+			<email>astrapi69 at users.sf.net</email>
+			<roles>
+				<role>Project manager</role>
+				<role>Developer</role>
+			</roles>
+			<timezone>Berlin</timezone>
+		</developer>
+
+	</developers>
+
+	<scm>
+		<connection>scm:git:git:@github.com:lightblueseas/mvn-parent-projects.git</connection>
+		<developerConnection>scm:git:git@github.com:lightblueseas/mvn-parent-projects.git</developerConnection>
+		<url>git:@github.com:lightblueseas/mvn-parent-projects.git</url>
+	</scm>
+
+	<issueManagement>
+		<system>github</system>
+		<url>https://github.com/lightblueseas/mvn-parent-projects/issues</url>
+	</issueManagement>
+
+	<ciManagement>
+		<system>travis-ci</system>
+		<url>https://travis-ci.org/lightblueseas/mvn-parent-projects</url>
+	</ciManagement>
+
+	<distributionManagement>
+		<repository>
+			<id>ossrh</id>
+			<name>Nexus Release Repository</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<name>Sonatype Nexus Snapshots</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<build>
 
@@ -132,7 +136,7 @@
 
 				<plugin>
 					<inherited>true</inherited>
-					<!-- NOTE: We don't need a groupId specification because the group is
+					<!-- NOTE: We don't need a groupId specification because the group is 
 						org.apache.maven.plugins ...which is assumed by default. -->
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>${maven-compiler-plugin.version}</version>
@@ -146,8 +150,8 @@
 						<debug>${maven.compiler.debug}</debug>
 					</configuration>
 				</plugin>
-				<!-- Configuring maven source plugin: To attach source artifacts to your
-					build we execute the source:jar goal from the source plugin during the package
+				<!-- Configuring maven source plugin: To attach source artifacts to your 
+					build we execute the source:jar goal from the source plugin during the package 
 					phase. -->
 				<plugin>
 					<inherited>true</inherited>
@@ -162,7 +166,7 @@
 						</execution>
 					</executions>
 				</plugin>
-				<!-- Configuring maven clean plugin: deletes the generated test-output
+				<!-- Configuring maven clean plugin: deletes the generated test-output 
 					directories that are generated from testng. -->
 				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
@@ -182,7 +186,7 @@
 					<artifactId>maven-install-plugin</artifactId>
 					<version>${maven-install-plugin.version}</version>
 				</plugin>
-				<!-- Configuring Maven Javadoc Plugin: To attach javadoc artifacts to
+				<!-- Configuring Maven Javadoc Plugin: To attach javadoc artifacts to 
 					your build we execute the javadoc:jar goal from the javadoc plugin. -->
 				<plugin>
 					<inherited>true</inherited>
@@ -332,11 +336,41 @@
 					<artifactId>maven-changelog-plugin</artifactId>
 					<version>${maven-changelog-plugin.version}</version>
 				</plugin>
-				
+
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>versions-maven-plugin</artifactId>
 					<version>${versions-maven-plugin.version}</version>
+				</plugin>
+
+				<plugin>
+					<groupId>net.revelc.code.formatter</groupId>
+					<artifactId>formatter-maven-plugin</artifactId>
+					<version>${formatter-maven-plugin.version}</version>
+					<configuration>
+						<configFile>${project.basedir}/EclipseCodeFormat.xml</configFile>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>com.github.ekryd.sortpom</groupId>
+					<artifactId>sortpom-maven-plugin</artifactId>
+					<version>${sortpom-maven-plugin.version}</version>
+					<configuration>
+						<encoding>${project.build.sourceEncoding}</encoding>
+						<sortOrderFile>${project.basedir}/sortOrderFile-tmpl.xml</sortOrderFile>
+						<sortProperties>false</sortProperties>
+						<keepBlankLines>true</keepBlankLines>
+						<sortDependencies>scope</sortDependencies>
+					</configuration>
+					<executions>
+						<execution>
+							<phase>verify</phase>
+							<goals>
+								<goal>sort</goal>
+							</goals>
+						</execution>
+					</executions>
 				</plugin>
 
 			</plugins>
@@ -349,7 +383,7 @@
 
 		<profile>
 			<id>oss.sonatype.org-staged-release</id>
-			<!-- This is the profile to use for releasing into the staged release
+			<!-- This is the profile to use for releasing into the staged release 
 				repo. We need to sign the artifacts. -->
 			<activation>
 				<property>
@@ -357,6 +391,19 @@
 					<value>true</value>
 				</property>
 			</activation>
+
+			<distributionManagement>
+				<repository>
+					<id>ossrh</id>
+					<name>Nexus Release Repository</name>
+					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+				</repository>
+				<snapshotRepository>
+					<id>ossrh</id>
+					<name>Sonatype Nexus Snapshots</name>
+					<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+				</snapshotRepository>
+			</distributionManagement>
 
 			<build>
 				<plugins>
@@ -384,19 +431,6 @@
 
 				</plugins>
 			</build>
-
-			<distributionManagement>
-				<snapshotRepository>
-					<id>ossrh</id>
-					<name>Sonatype Nexus Snapshots</name>
-					<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-				</snapshotRepository>
-				<repository>
-					<id>ossrh</id>
-					<name>Nexus Release Repository</name>
-					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-				</repository>
-			</distributionManagement>
 
 		</profile>
 
