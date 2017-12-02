@@ -8,8 +8,8 @@
 <listAttribute key="M2_PROPERTIES"/>
 <stringAttribute key="M2_RUNTIME" value="EMBEDDED"/>
 <booleanAttribute key="M2_SKIP_TESTS" value="false"/>
-<intAttribute key="M2_THREADS" value="0"/>
-<booleanAttribute key="M2_UPDATE_SNAPSHOTS" value="true"/>
+<intAttribute key="M2_THREADS" value="8"/>
+<booleanAttribute key="M2_UPDATE_SNAPSHOTS" value="false"/>
 <stringAttribute key="M2_USER_SETTINGS" value=""/>
 <booleanAttribute key="M2_WORKSPACE_RESOLUTION" value="false"/>
 <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="${project_loc:mvn-parent-projects}"/>
