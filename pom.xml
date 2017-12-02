@@ -348,7 +348,7 @@
 					<artifactId>formatter-maven-plugin</artifactId>
 					<version>${formatter-maven-plugin.version}</version>
 					<configuration>
-						<configFile>${project.basedir}/EclipseCodeFormat.xml</configFile>
+						<configFile>${project.basedir}/src/main/resources/EclipseCodeFormat.xml</configFile>
 					</configuration>
 				</plugin>
 
@@ -358,7 +358,7 @@
 					<version>${sortpom-maven-plugin.version}</version>
 					<configuration>
 						<encoding>${project.build.sourceEncoding}</encoding>
-						<sortOrderFile>${project.basedir}/sortOrderFile-tmpl.xml</sortOrderFile>
+						<sortOrderFile>${project.basedir}/src/main/resources/sortOrderFile-tmpl.xml</sortOrderFile>
 						<sortProperties>false</sortProperties>
 						<keepBlankLines>true</keepBlankLines>
 						<sortDependencies>scope</sortDependencies>
