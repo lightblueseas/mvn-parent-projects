@@ -485,7 +485,7 @@
 
 		<profile>
 
-			<id>generate-changelog-range-100</id>
+			<id>changelog-range-100</id>
 
 			<activation>
 				<property>
@@ -533,7 +533,7 @@
 
 		<profile>
 
-			<id>generate-changelog-range-365</id>
+			<id>changelog-range-365</id>
 
 			<activation>
 				<property>
