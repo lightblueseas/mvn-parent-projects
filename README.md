@@ -28,6 +28,8 @@ Add as parent project in the `pom.xml` file:
 		<version>1.18.0</version>
 		<relativePath></relativePath>
 	</parent>	
+	
+You can find tips or errata on in the [project's wiki page](https://github.com/lightblueseas/mvn-parent-projects/wiki).
 
 ## Documentation and Examples
 
