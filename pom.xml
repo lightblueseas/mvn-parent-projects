@@ -5,7 +5,7 @@
 
 	<groupId>de.alpharogroup</groupId>
 	<artifactId>mvn-parent-projects</artifactId>
-	<version>1.17.0</version>
+	<version>1.19.0</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
@@ -480,6 +480,150 @@
 
 				</plugins>
 			</build>
+
+		</profile>
+
+		<profile>
+
+			<id>changelog-range-100</id>
+
+			<activation>
+				<property>
+					<name>performRelease</name>
+					<value>true</value>
+				</property>
+			</activation>
+
+			<build>
+				<plugins>
+
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-changelog-plugin</artifactId>
+						<version>${maven-changelog-plugin.version}</version>
+						<configuration>
+							<type>range</type>
+							<range>100</range>
+						</configuration>
+					</plugin>
+
+				</plugins>
+
+			</build>
+
+			<reporting>
+
+				<plugins>
+
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-changelog-plugin</artifactId>
+						<version>${maven-changelog-plugin.version}</version>
+						<configuration>
+							<type>range</type>
+							<range>100</range>
+						</configuration>
+					</plugin>
+
+				</plugins>
+
+			</reporting>
+
+		</profile>
+
+		<profile>
+
+			<id>changelog-range-1000</id>
+
+			<activation>
+				<property>
+					<name>performRelease</name>
+					<value>true</value>
+				</property>
+			</activation>
+
+			<build>
+				<plugins>
+
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-changelog-plugin</artifactId>
+						<version>${maven-changelog-plugin.version}</version>
+						<configuration>
+							<type>range</type>
+							<range>1000</range>
+						</configuration>
+					</plugin>
+
+				</plugins>
+
+			</build>
+
+			<reporting>
+
+				<plugins>
+
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-changelog-plugin</artifactId>
+						<version>${maven-changelog-plugin.version}</version>
+						<configuration>
+							<type>range</type>
+							<range>1000</range>
+						</configuration>
+					</plugin>
+
+				</plugins>
+
+			</reporting>
+
+		</profile>
+
+		<profile>
+
+			<id>changelog-range-365</id>
+
+			<activation>
+				<property>
+					<name>performRelease</name>
+					<value>true</value>
+				</property>
+			</activation>
+
+			<build>
+				<plugins>
+
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-changelog-plugin</artifactId>
+						<version>${maven-changelog-plugin.version}</version>
+						<configuration>
+							<type>range</type>
+							<range>365</range>
+						</configuration>
+					</plugin>
+
+				</plugins>
+
+			</build>
+
+			<reporting>
+
+				<plugins>
+
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-changelog-plugin</artifactId>
+						<version>${maven-changelog-plugin.version}</version>
+						<configuration>
+							<type>range</type>
+							<range>365</range>
+						</configuration>
+					</plugin>
+
+				</plugins>
+
+			</reporting>
 
 		</profile>
 

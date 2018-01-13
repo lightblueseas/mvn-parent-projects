@@ -25,9 +25,11 @@ Add as parent project in the `pom.xml` file:
 	<parent>
 		<groupId>de.alpharogroup</groupId>
 		<artifactId>mvn-parent-projects</artifactId>
-		<version>1.17.0</version>
+		<version>1.19.0</version>
 		<relativePath></relativePath>
 	</parent>	
+	
+You can find tips or errata on in the [project's wiki page](https://github.com/lightblueseas/mvn-parent-projects/wiki).
 
 ## Documentation and Examples
 
@@ -59,10 +61,28 @@ Do not hesitate to contact the mvn-parent-projects developers with your question
 
 No animals were harmed in the making of this library.
 
-# Donate
+# Donations
 
-If you like this library, please consider a donation through 
-<a href="https://flattr.com/submit/auto?fid=r7vp62&url=https%3A%2F%2Fgithub.com%2Flightblueseas%2Fmvn-parent-projects" target="_blank">
+If you like this library, please consider a donation through paypal: <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B37J9DZF6G9ZC" target="_blank">
+<img src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" alt="PayPal this" title="PayPal – The safer, easier way to pay online!" border="0" />
+</a>
+
+or over bitcoin or bitcoin-cash with:
+
+1Jzso5h7U82QCNmgxxSCya1yUK7UVcSXsW
+
+or over ether with:
+
+0xaB6EaE10F352268B0CA672Dd6e999C86344D49D8
+
+or over flattr: <a href="https://flattr.com/submit/auto?fid=r7vp62&url=https%3A%2F%2Fgithub.com%2Flightblueseas%2Fmvn-parent-projects" target="_blank">
 <img src="http://button.flattr.com/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0">
 </a>
+
+## Credits
+
+|Travis CI|
+|:-:|
+|![Travis CI](https://travis-ci.com/images/logos/TravisCI-Full-Color.png)|
+|Many thanks to [Travis CI](https://travis-ci.org) for providing a free continuous integration service for open source projects.|
 
