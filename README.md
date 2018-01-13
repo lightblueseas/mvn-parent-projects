@@ -25,7 +25,7 @@ Add as parent project in the `pom.xml` file:
 	<parent>
 		<groupId>de.alpharogroup</groupId>
 		<artifactId>mvn-parent-projects</artifactId>
-		<version>1.18.0</version>
+		<version>1.19.0</version>
 		<relativePath></relativePath>
 	</parent>	
 	
