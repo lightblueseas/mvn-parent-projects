@@ -1,9 +1,11 @@
 # Overview
 
 <div align="center">
+
 [![license apache2](https://img.shields.io/badge/license-apache2-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Build Status](https://travis-ci.org/lightblueseas/mvn-parent-projects.svg?branch=master)](https://travis-ci.org/lightblueseas/mvn-parent-projects)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/de.alpharogroup/mvn-parent-projects/badge.svg)](https://maven-badges.herokuapp.com/maven-central/de.alpharogroup/mvn-parent-projects)
+
 </div>
 
 This project holds parent projects that holds general properties for specific maven projects.
