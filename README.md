@@ -5,6 +5,7 @@
 [![license apache2](https://img.shields.io/badge/license-apache2-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Build Status](https://travis-ci.org/lightblueseas/mvn-parent-projects.svg?branch=master)](https://travis-ci.org/lightblueseas/mvn-parent-projects)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/de.alpharogroup/mvn-parent-projects/badge.svg)](https://maven-badges.herokuapp.com/maven-central/de.alpharogroup/mvn-parent-projects)
+[![Open Issues](https://img.shields.io/github/issues/lightblueseas/mvn-parent-projects.svg?style=flat)](https://github.com/lightblueseas/mvn-parent-projects/issues) 
 
 </div>
 
@@ -17,16 +18,7 @@ This project holds parent projects that holds general properties for specific ma
 
 ## License
 
-[![license apache2](https://img.shields.io/badge/license-apache2-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
-
 The source code comes under the liberal Apache License V2.0, making mvn-parent-projects great for all types of  applications.
-
-## Build status
-[![Build Status](https://travis-ci.org/lightblueseas/mvn-parent-projects.svg?branch=master)](https://travis-ci.org/lightblueseas/mvn-parent-projects)
-
-## Maven Central
-
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/de.alpharogroup/mvn-parent-projects/badge.svg)](https://maven-badges.herokuapp.com/maven-central/de.alpharogroup/mvn-parent-projects)
 
 ## How to use it
 
@@ -50,9 +42,6 @@ From the shell you can execute it with the following command:
 :~$ mvn clean deploy -Poss.sonatype.org-staged-release
 ```
 This is executed on this project or in a project that have this project as parent or parent of parent and so on. A detailed description how to use it is [here](https://github.com/lightblueseas/mvn-parent-projects/issues/2).
-
-## Open Issues
-[![Open Issues](https://img.shields.io/github/issues/lightblueseas/mvn-parent-projects.svg?style=flat)](https://github.com/lightblueseas/mvn-parent-projects/issues) 
 
 ## Want to Help and improve it? ###
 
