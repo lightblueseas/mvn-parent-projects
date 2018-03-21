@@ -22,10 +22,11 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- MAVEN PLUGIN versions -->
 		<!-- MAVEN COMPILER PLUGIN version -->
+		<jdk.version>1.8</jdk.version>
 		<maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+		<maven.compiler.source>${jdk.version}</maven.compiler.source>
+		<maven.compiler.target>${jdk.version}</maven.compiler.target>
+		<maven.compiler.compilerVersion>${jdk.version}</maven.compiler.compilerVersion>
 		<maven.compiler.optimize>true</maven.compiler.optimize>
 		<maven.compiler.showWarnings>true</maven.compiler.showWarnings>
 		<maven.compiler.debug>true</maven.compiler.debug>
