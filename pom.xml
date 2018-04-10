@@ -5,7 +5,7 @@
 
 	<groupId>de.alpharogroup</groupId>
 	<artifactId>mvn-parent-projects</artifactId>
-	<version>1.20.0</version>
+	<version>1.21.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
@@ -23,15 +23,18 @@
 		<!-- MAVEN PLUGIN versions -->
 		<!-- MAVEN COMPILER PLUGIN version -->
 		<jdk.version>1.8</jdk.version>
+		<jdk-source.version>${jdk.version}</jdk-source.version>
+		<jdk-target.version>${jdk.version}</jdk-target.version>
+		<jdk.compilerVersion>${jdk.version}</jdk.compilerVersion>
 		<maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
-		<maven.compiler.source>${jdk.version}</maven.compiler.source>
-		<maven.compiler.target>${jdk.version}</maven.compiler.target>
-		<maven.compiler.compilerVersion>${jdk.version}</maven.compiler.compilerVersion>
+		<maven.compiler.source>${jdk-source.version}</maven.compiler.source>
+		<maven.compiler.target>${jdk-target.version}</maven.compiler.target>
+		<maven.compiler.compilerVersion>${jdk.compilerVersion}</maven.compiler.compilerVersion>
 		<maven.compiler.optimize>true</maven.compiler.optimize>
 		<maven.compiler.showWarnings>true</maven.compiler.showWarnings>
 		<maven.compiler.debug>true</maven.compiler.debug>
 		<!-- MAVEN DEPENDENCY PLUGIN version -->
-		<maven-dependency-plugin.version>3.0.2</maven-dependency-plugin.version>
+		<maven-dependency-plugin.version>3.1.0</maven-dependency-plugin.version>
 		<!-- MAVEN SOURCE PLUGIN version -->
 		<maven-source-plugin.version>3.0.1</maven-source-plugin.version>
 		<!-- MAVEN CLEAN PLUGIN version -->
@@ -63,9 +66,9 @@
 		<!-- MAVEN CHANGELOG PLUGIN version -->
 		<maven-changelog-plugin.version>2.3</maven-changelog-plugin.version>
 		<!-- VERSIONS-MAVEN-PLUGIN versions -->
-		<versions-maven-plugin.version>2.4</versions-maven-plugin.version>
+		<versions-maven-plugin.version>2.5</versions-maven-plugin.version>
 		<!-- FORMATTER-MAVEN-PLUGIN version -->
-		<formatter-maven-plugin.version>2.6.0</formatter-maven-plugin.version>
+		<formatter-maven-plugin.version>2.7.2</formatter-maven-plugin.version>
 		<!-- SORTPOM-MAVEN-PLUGIN version -->
 		<sortpom-maven-plugin.version>2.8.0</sortpom-maven-plugin.version>
 	</properties>
