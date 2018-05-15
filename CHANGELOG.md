@@ -1,6 +1,17 @@
 ## Change log
 ----------------------
 
+Version 1.22-SNAPSHOT
+-------------
+
+CHANGED:
+
+- removed unneeded .0 at the end of version
+- update of maven-clean-plugin dependency version from 3.0.0 to 3.1.0
+- update of maven-jar-plugin dependency version from 3.0.2 to 3.1.0
+- update of maven-resources-plugin dependency version from 3.0.2 to 3.1.0
+- update of formatter-maven-plugin dependency version from 2.7.2 to 2.7.3
+
 Version 1.21.0
 -------------
 
