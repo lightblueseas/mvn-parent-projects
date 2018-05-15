@@ -5,7 +5,7 @@
 
 	<groupId>de.alpharogroup</groupId>
 	<artifactId>mvn-parent-projects</artifactId>
-	<version>1.22.0-SNAPSHOT</version>
+	<version>1.22</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
@@ -38,15 +38,15 @@
 		<!-- MAVEN SOURCE PLUGIN version -->
 		<maven-source-plugin.version>3.0.1</maven-source-plugin.version>
 		<!-- MAVEN CLEAN PLUGIN version -->
-		<maven-clean-plugin.version>3.0.0</maven-clean-plugin.version>
+		<maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
 		<!-- MAVEN INSTALL PLUGIN versions -->
 		<maven-install-plugin.version>2.5.2</maven-install-plugin.version>
 		<!-- MAVEN JAVADOC PLUGIN version -->
 		<maven-javadoc-plugin.version>3.0.0</maven-javadoc-plugin.version>
 		<!-- MAVEN-JAR-PLUGIN versions -->
-		<maven-jar-plugin.version>3.0.2</maven-jar-plugin.version>
+		<maven-jar-plugin.version>3.1.0</maven-jar-plugin.version>
 		<!-- MAVEN RESOURCES PLUGIN version -->
-		<maven-resources-plugin.version>3.0.2</maven-resources-plugin.version>
+		<maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
 		<!-- BUILD-HELPER MAVEN PLUGIN versions -->
 		<build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
 		<!-- MAVEN ECLIPSE PLUGIN version -->
@@ -68,7 +68,7 @@
 		<!-- VERSIONS-MAVEN-PLUGIN versions -->
 		<versions-maven-plugin.version>2.5</versions-maven-plugin.version>
 		<!-- FORMATTER-MAVEN-PLUGIN version -->
-		<formatter-maven-plugin.version>2.7.2</formatter-maven-plugin.version>
+		<formatter-maven-plugin.version>2.7.3</formatter-maven-plugin.version>
 		<!-- SORTPOM-MAVEN-PLUGIN version -->
 		<sortpom-maven-plugin.version>2.8.0</sortpom-maven-plugin.version>
 	</properties>
