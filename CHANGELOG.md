@@ -1,7 +1,11 @@
 ## Change log
 ----------------------
 
-Version 1.22-SNAPSHOT
+Version 1.23-SNAPSHOT
+-------------
+
+
+Version 1.22
 -------------
 
 CHANGED:
