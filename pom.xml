@@ -5,7 +5,7 @@
 
 	<groupId>de.alpharogroup</groupId>
 	<artifactId>mvn-parent-projects</artifactId>
-	<version>1.22</version>
+	<version>1.23</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
@@ -42,7 +42,7 @@
 		<!-- MAVEN INSTALL PLUGIN versions -->
 		<maven-install-plugin.version>2.5.2</maven-install-plugin.version>
 		<!-- MAVEN JAVADOC PLUGIN version -->
-		<maven-javadoc-plugin.version>3.0.0</maven-javadoc-plugin.version>
+		<maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
 		<!-- MAVEN-JAR-PLUGIN versions -->
 		<maven-jar-plugin.version>3.1.0</maven-jar-plugin.version>
 		<!-- MAVEN RESOURCES PLUGIN version -->
