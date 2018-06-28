@@ -4,6 +4,9 @@
 Version 1.23-SNAPSHOT
 -------------
 
+CHANGED:
+
+- update of maven-javadoc-plugin dependency version from 3.0.0 to 3.0.1
 
 Version 1.22
 -------------
