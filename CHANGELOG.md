@@ -1,6 +1,14 @@
 ## Change log
 ----------------------
 
+Version 1.24
+-------------
+
+CHANGED:
+
+- update of maven-dependency-plugin dependency version from 3.1.0 to 3.1.1
+- update of formatter-maven-plugin dependency version from 2.7.3 to 2.7.4
+
 Version 1.23
 -------------
 

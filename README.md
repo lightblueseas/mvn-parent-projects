@@ -27,12 +27,20 @@ Add as parent project in the `pom.xml` file:
 	<parent>
 		<groupId>de.alpharogroup</groupId>
 		<artifactId>mvn-parent-projects</artifactId>
-		<version>1.23</version>
+		<version>1.24</version>
 		<relativePath></relativePath>
-	</parent>	
-	
-You can find tips or errata on in the [project's wiki page](https://github.com/lightblueseas/mvn-parent-projects/wiki).
+	</parent>
 
+## Semantic Versioning
+
+The versions of mvn-parent-projects are maintained with the Semantic Versioning guidelines.
+
+Release version numbers will be incremented in the following format:
+
+`<major>.<minor>.<patch>`
+
+For detailed information on versioning you can visit the [wiki page](https://github.com/lightblueseas/mvn-parent-projects/wiki/Semantic-Versioning).
+		
 ## Documentation and Examples
 
 In this parent project there is only one profile for for releasing artifacts (projects) on sonatype. The name of the profile is 'oss.sonatype.org-staged-release' and is self-explaining.
@@ -42,6 +50,8 @@ From the shell you can execute it with the following command:
 :~$ mvn clean deploy -Poss.sonatype.org-staged-release
 ```
 This is executed on this project or in a project that have this project as parent or parent of parent and so on. A detailed description how to use it is [here](https://github.com/lightblueseas/mvn-parent-projects/issues/2).
+
+You can find tips or errata on in the [project's wiki page](https://github.com/lightblueseas/mvn-parent-projects/wiki).
 
 ## Want to Help and improve it? ###
 
