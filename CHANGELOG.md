@@ -1,6 +1,14 @@
 ## Change log
 ----------------------
 
+Version 2
+-------------
+
+CHANGED:
+
+- update of maven-compiler-plugin dependency version to 3.8.0
+- update of versions-maven-plugin dependency version to 2.7
+
 Version 1.24
 -------------
 
