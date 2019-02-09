@@ -1,8 +1,16 @@
 ## Change log
 ----------------------
 
-Version 2.1-SNAPSHOT
+Version 2.1
 -------------
+
+CHANGED:
+
+- update maven-assembly-plugin dependency version to 3.1.1
+- update maven-deploy-plugin dependency version to 3.0.0-M1
+- update maven-install-plugin dependency version to 3.0.0-M1
+- update maven-jar-plugin dependency version to 3.1.1
+- update formatter-maven-plugin dependency version to 2.8.1
 
 Version 2
 -------------
