@@ -4,6 +4,11 @@
 Version 2.1-SNAPSHOT
 -------------
 
+CHANGED:
+
+- update of maven-javadoc-plugin dependency version to 3.1.0
+- update of maven-assembly-plugin dependency version to 3.1.1
+
 Version 2
 -------------
 
