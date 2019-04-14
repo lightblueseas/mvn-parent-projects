@@ -5,7 +5,7 @@
 
 	<groupId>de.alpharogroup</groupId>
 	<artifactId>mvn-parent-projects</artifactId>
-	<version>2.2-SNAPSHOT</version>
+	<version>2.2</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
