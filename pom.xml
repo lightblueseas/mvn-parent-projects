@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.alpharogroup</groupId>
 	<artifactId>mvn-parent-projects</artifactId>
-	<version>2.2</version>
+	<version>3</version>
 	<packaging>pom</packaging>
 	<inceptionYear>2015</inceptionYear>
 
@@ -28,14 +29,12 @@
 		<!-- MAVEN CLEAN PLUGIN version -->
 		<maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
 		<!-- MAVEN COMPILER PLUGIN version -->
-		<jdk.version>1.8</jdk.version>
-		<jdk-source.version>${jdk.version}</jdk-source.version>
-		<jdk-target.version>${jdk.version}</jdk-target.version>
-		<jdk.compilerVersion>${jdk.version}</jdk.compilerVersion>
+		<java.version>11</java.version>
+		<java-release.version>${java.version}</java-release.version>
+		<java-target.version>${java.version}</java-target.version>
 		<maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
-		<maven.compiler.source>${jdk-source.version}</maven.compiler.source>
-		<maven.compiler.target>${jdk-target.version}</maven.compiler.target>
-		<maven.compiler.compilerVersion>${jdk.compilerVersion}</maven.compiler.compilerVersion>
+		<maven.compiler.source>${java-release.version}</maven.compiler.source>
+		<maven.compiler.target>${java-target.version}</maven.compiler.target>
 		<maven.compiler.optimize>true</maven.compiler.optimize>
 		<maven.compiler.showWarnings>true</maven.compiler.showWarnings>
 		<maven.compiler.debug>true</maven.compiler.debug>
@@ -145,9 +144,8 @@
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>${maven-compiler-plugin.version}</version>
 					<configuration>
-						<source>${maven.compiler.source}</source>
+						<release>${maven.compiler.source}</release>
 						<target>${maven.compiler.target}</target>
-						<compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
 						<encoding>${project.build.sourceEncoding}</encoding>
 						<optimize>${maven.compiler.optimize}</optimize>
 						<showWarnings>${maven.compiler.showWarnings}</showWarnings>
@@ -306,15 +304,13 @@
 						</execution>
 					</executions>
 				</plugin>
-				<!--    The Nexus Staging Maven Plugin is the recommended way to deploy
-					your components to OSSRH and release them to the Central Repository. 
-					_______________
-					If your version is a release version (does not end in -SNAPSHOT) and with
-					this setup in place, you can run a deployment to OSSRH and an automated release
-					to the Central Repository with the usual: mvn clean deploy 
-					_________________________
-					With the property autoReleaseAfterClose set to false you can manually inspect
-					the staging repository in Nexus and trigger a release of the staging repository
+				<!-- The Nexus Staging Maven Plugin is the recommended way to deploy 
+					your components to OSSRH and release them to the Central Repository. _______________ 
+					If your version is a release version (does not end in -SNAPSHOT) and with 
+					this setup in place, you can run a deployment to OSSRH and an automated release 
+					to the Central Repository with the usual: mvn clean deploy _________________________ 
+					With the property autoReleaseAfterClose set to false you can manually inspect 
+					the staging repository in Nexus and trigger a release of the staging repository 
 					later with: mvn nexus-staging:release. -->
 				<plugin>
 					<groupId>org.sonatype.plugins</groupId>
@@ -332,9 +328,7 @@
 					<artifactId>maven-dependency-plugin</artifactId>
 					<version>${maven-dependency-plugin.version}</version>
 				</plugin>
-				<!-- 
-				See usage on: http://maven.apache.org/plugins/maven-changelog-plugin/usage.html
-				-->
+				<!-- See usage on: http://maven.apache.org/plugins/maven-changelog-plugin/usage.html -->
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-changelog-plugin</artifactId>

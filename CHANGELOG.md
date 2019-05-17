@@ -1,6 +1,13 @@
 ## Change log
 ----------------------
 
+Version 3
+-------------
+
+CHANGED:
+
+- update to jdk release 11
+
 Version 2.2
 -------------
 
