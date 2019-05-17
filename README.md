@@ -51,7 +51,7 @@ Add as parent project in the `pom.xml` file:
 	<parent>
 		<groupId>de.alpharogroup</groupId>
 		<artifactId>mvn-parent-projects</artifactId>
-		<version>2.2</version>
+		<version>3</version>
 		<relativePath></relativePath>
 	</parent>
 
